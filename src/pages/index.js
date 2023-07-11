@@ -4,7 +4,12 @@ import Layout from "../components/layout"
 
 const IndexPage = () => (
   <Layout>
-    <h1 className="text-3xl font-bold underline text-primary">Hello world!</h1>
+    <h1 className="h1-text">h1 heading</h1>
+    <h2 className="h2-text">h2 heading</h2>
+    <h2 className="h3-text">h3 heading</h2>
+    <p className="subheading-text"> subheading text</p>
+    <p className="small-text"> small text</p>
+    <button className="button bg-purple_200">subment</button>
   </Layout>
 )
 

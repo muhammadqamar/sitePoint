@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
+
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
@@ -5,6 +7,48 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: "Inter", sans-serif !important;
+}
+
+* {
+  @apply m-0 p-0 box-border;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  @apply m-0 p-0;
+}
+
 .cntainer {
-  @apply max-w-[1440px] mx-auto bg-[#764308];
+  @apply max-w-[1440px] mx-auto;
+}
+
+// button styles
+
+.button {
+  @apply flex items-center justify-center py-2 px-6 rounded-[56px] h-[56px] text-base font-semibold text-white;
+}
+
+// text styles
+
+.h1-text {
+  @apply font-bold text-5xl tracking-[-1.92px];
+}
+.h2-text {
+  @apply font-bold text-4xl tracking-[-1.92px] text-black;
+}
+.h3-text {
+  @apply font-bold text-2xl tracking-[-0.4px] text-black;
+}
+.subheading-text {
+  @apply font-normal text-xl leading-6 tracking-[-0.4px] text-black;
+}
+.small-text {
+  @apply text-base font-normal;
 }
