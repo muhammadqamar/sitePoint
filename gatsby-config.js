@@ -16,6 +16,10 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-image`,
+    "gatsby-plugin-sass",
+
+    `gatsby-plugin-postcss`,
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
