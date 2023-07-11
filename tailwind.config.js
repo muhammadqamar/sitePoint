@@ -17,6 +17,7 @@ module.exports = {
       purple_500: "  #EEE6FF",
       gray_300: "#ABABAB",
       gray_400: "#464646",
+      gray_500: "#E6E6E6",
     },
     extend: {},
   },

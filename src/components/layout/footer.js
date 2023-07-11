@@ -1,11 +1,15 @@
 import React from "react"
-
+import SitePoint from "../../assets/images/sitePointLogo.svg"
 const Footer = () => {
   return (
-    <footer>
-      © {new Date().getFullYear()} &middot; Built with
-      {` `}
-      <a href="https://www.gatsbyjs.com">Gatsby</a>
+    <footer className="m-auto flex flex-col items-center pt-16 pb-[124px]">
+      <div className="h-[1px] bg-gray_500 mb-16 w-[506px] max-sm:w-full" />
+      <div className="flex flex-col items-center gap-8">
+        <img src={SitePoint} alt="SitePoint's Logo" className="gap-8" />
+        <span>
+          © {new Date().getFullYear()} &middot;Sitepoint. All rights reserved.
+        </span>
+      </div>
     </footer>
   )
 }
