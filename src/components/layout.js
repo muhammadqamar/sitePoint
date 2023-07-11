@@ -25,6 +25,7 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div
+        className="bg-primary1"
         style={{
           margin: `0 auto`,
           maxWidth: `var(--size-content)`,

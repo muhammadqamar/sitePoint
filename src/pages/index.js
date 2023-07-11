@@ -1,10 +1,11 @@
 import * as React from "react"
 import Seo from "../components/seo"
+import Layout from "../components/layout"
 
 const IndexPage = () => (
-  <div className="bg-primary1">
-    <h1 className="text-primary1">hello</h1>
-  </div>
+  <Layout>
+    <h1 className="text-3xl font-bold underline text-primary1">Hello world!</h1>
+  </Layout>
 )
 
 /**
