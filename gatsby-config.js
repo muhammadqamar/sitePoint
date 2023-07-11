@@ -16,7 +16,15 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-image`,
-    `gatsby-plugin-postcss`,
+    {
+      resolve: `gatsby-plugin-postcss`,
+      options: {
+        cssLoaderOptions: {
+          exportLocalsConvention: false,
+          namedExport: false,
+        },
+      },
+    },
     {
       resolve: "gatsby-plugin-sass",
       options: {
