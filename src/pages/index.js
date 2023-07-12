@@ -3,7 +3,11 @@ import Seo from "../components/seo"
 import Layout from "../components/layout"
 import bgImage from "../assets/images/Hero.png"
 
-const IndexPage = () => (
+const IndexPage = ({
+  AudienceCardIcon,
+  AudienceCardTitle,
+  AudienceCardText,
+}) => (
   <Layout>
     <div className="w-full h-[680px] lg:h-[550px] px-[20px] md:px-[clamp(20px,12vw,122px)] bg-black pb-[173px] md:pb-[168px] lg:pb-0 pt-[153px] sm:pt-[168px]  lg:pt-[184px] relative mb-[500px]">
       <div className="absolute bottom-0 right-0 w-full h-full ">
@@ -25,6 +29,13 @@ const IndexPage = () => (
           </p>
         </div>
         <div className="w-full  md:w-[535px] lg:w-[440px] h-[662px] bg-white rounded-3xl p-8 shadow-lgShadow"></div>
+      </div>
+      <div className="pt-5 pb-5 pl-5 w-[348px] rounded-[20px] bg-white">
+        <div>
+          <img src={AudienceCardIcon} alt="Inbox's icon" className="mb-5" />
+          <h3 className="h3-text">{AudienceCardTitle}</h3>
+          <h6 className="small-text">{AudienceCardText}</h6>
+        </div>
       </div>
     </div>
   </Layout>

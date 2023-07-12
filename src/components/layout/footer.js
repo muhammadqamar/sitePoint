@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="flex flex-col items-center gap-8">
         <img src={SitePoint} alt="SitePoint's Logo" className="gap-8" />
         <span>
-          © {new Date().getFullYear()} &middot;Sitepoint. All rights reserved.
+          © {new Date().getFullYear()} Sitepoint. All rights reserved.
         </span>
       </div>
     </footer>
