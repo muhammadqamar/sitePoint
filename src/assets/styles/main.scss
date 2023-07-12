@@ -69,3 +69,22 @@ p {
 .input {
   @apply w-full border border-solid rounded-[7px] focus-visible:outline-1 focus-visible:outline  focus-visible:outline-purple_200   bg-white flex items-center self-stretch border-gray_600 py-[10px] px-3;
 }
+
+// select style
+
+.select-style {
+  // remove icon
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  // icon
+  background-image: url("../images/icons/Expand.svg");
+  background-position: calc(100% - 8px) calc(1em + -4px),
+    calc(100% - 15px) calc(1em + 2px), calc(100% - 0.5em) 0.5em;
+  background-size: 20px, 20px;
+  background-repeat: no-repeat;
+}
