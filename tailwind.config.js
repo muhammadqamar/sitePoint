@@ -26,6 +26,8 @@ module.exports = {
     },
     backgroundImage: {
       RGBImage: "url(/images/purple-RGB.png)",
+      bgGradient:
+        "linear-gradient(180deg, rgba(114, 50, 250, 0.00) 0%, rgba(114, 50, 250, 0.06) 50%, rgba(255, 255, 255, 0.12) 100%)",
     },
 
     extend: {},
