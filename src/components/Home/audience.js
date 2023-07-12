@@ -41,7 +41,7 @@ const Audience = () => {
         <div className="flex flex-wrap m-auto gap-x-5 gap-y-6 justify-center">
           {Cards.map(item => {
             return (
-              <div className="pt-5 pb-5 pl-5 w-[348px] max-sm:w-[335px] rounded-[20px] bg-white">
+              <div className="p-5 w-full md:w-[348px]  rounded-[20px]  bg-white">
                 <div className="bg-black w-11 h-11 rounded-[50px] flex mb-5">
                   <img
                     src={item.image}
