@@ -55,7 +55,7 @@ const TargetCustomers = () => {
             </div>
           ))}
         </div>
-        <button className="bg-purple_200 button mt-20 sm:max-w-full">
+        <button className="bg-purple_200 button mt-20 w-full sm:w-fit">
           Get in touch
         </button>
       </div>
