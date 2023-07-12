@@ -3,7 +3,7 @@ import { Formik } from "formik"
 
 const ContactUs = () => {
   return (
-    <div className="w-full  md:w-[535px] lg:w-[440px] min-h-[662px] bg-white rounded-3xl p-8 shadow-lgShadow">
+    <div className="w-full  md:w-[535px] lg:w-[440px] min-h-[662px] bg-white rounded-3xl px-5 py-8 sm:p-8 shadow-none md:shadow-lgShadow">
       <h3 className="h3-text mb-1">Contact us</h3>
       <p className="body-small-text text-gray_400 mb-8">
         The minimum campaign spend is $1,000 USD
