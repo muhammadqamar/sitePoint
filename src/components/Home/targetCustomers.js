@@ -36,7 +36,7 @@ const data = [
 
 const TargetCustomers = () => {
     return (
-        <div className='max-w-full flex flex-row h-auto mt-10 mx-auto lg:w-100%'>
+        <div className='max-w-full flex lg:flex-row h-auto mt-10 mx-auto lg:w-full'>
             <div>
                 <div className="h2-text h-auto text-left lg:text-left mb-16">
                     <h1 className="h1-text text-black lg:w-[451px] mb-4">
@@ -46,15 +46,17 @@ const TargetCustomers = () => {
                         Choose from a range of solutions to suit your budget and reach:
                     </p>
                 </div>
-                {data.map((item) => (
-                    <div className="flex flex-row gap-4 text-black sm:flex-1">
-                        <img src={item.image} alt="target Icon" className='mb-8' />
-                        <div className="subheading-text">{item.text}</div>
-                    </div>
-                ))}
+                <div className='flex flex-col md:flex-wrap'>
+                    {data.map((item) => (
+                        <div className="flex flex-row gap-4 text-black">
+                            <img src={item.image} alt="target Icon" className='mb-8' />
+                            <div className="subheading-text">{item.text}</div>
+                        </div>
+                    ))}
+                </div>
                 <button className='bg-purple_200 button mt-20 sm:max-w-full'>Get in touch</button>
             </div>
-            {/* <img src={MobileImage} alt="mobile image" /> */}
+            <img src={MobileImage} alt="mobile image" width={720} height={753}/>
         </div>
     )
 }
