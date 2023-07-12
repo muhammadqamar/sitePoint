@@ -1,5 +1,6 @@
 import React from "react"
 import bgImage from "../../assets/images/Hero.png"
+import ContactUs from "./contactUs"
 
 const Hero = () => {
   return (
@@ -22,7 +23,7 @@ const Hero = () => {
             Grow your business with targeted advertising solutions that work.
           </p>
         </div>
-        <div className="w-full  md:w-[535px] lg:w-[440px] h-[662px] bg-white rounded-3xl p-8 shadow-lgShadow"></div>
+        <ContactUs />
       </div>
     </div>
   )
