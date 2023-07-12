@@ -27,6 +27,7 @@ module.exports = {
     backgroundImage: {
       RGBImage: "url(/images/purple-RGB.png)",
     },
+
     extend: {},
   },
   plugins: [],
