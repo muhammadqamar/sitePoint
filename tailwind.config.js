@@ -18,6 +18,7 @@ module.exports = {
       gray_300: "#ABABAB",
       gray_400: "#464646",
       gray_500: "#E6E6E6",
+      gray_600: "#D5D5D5",
     },
     boxShadow: {
       lgShadow:

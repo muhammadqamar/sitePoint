@@ -4,8 +4,8 @@ import { StaticImage } from "gatsby-plugin-image"
 const Trusted = () => {
   return (
     <div className="">
-      <h3 className="h3-text mb-10">Trusted by</h3>
-      <div className="w-[532px] flex items-start content-start flex-wrap gap-x-5 gap-y-6">
+      <h3 className="h3-text mb-10 text-center lg:text-left">Trusted by</h3>
+      <div className="w-full sm:w-[532px] flex items-start content-start flex-wrap  gap-x-5 gap-y-6 mx-auto lg:mx-0">
         <StaticImage
           src="../../assets/images/logo/atlassian.png"
           width={164}
