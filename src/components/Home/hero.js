@@ -1,9 +1,10 @@
 import React from "react"
 import bgImage from "../../assets/images/Hero.png"
+import ContactUs from "./contactUs"
 
 const Hero = () => {
   return (
-    <div className="w-full h-[680px] lg:h-[550px] px-[20px] md:px-[clamp(20px,12vw,122px)] bg-black pb-[173px] md:pb-[168px] lg:pb-0 pt-[153px] sm:pt-[168px]  lg:pt-[184px] relative ">
+    <div className="w-full h-[680px] lg:h-[550px] px-[20px] md:px-[clamp(20px,12vw,122px)] lg:px-8 bg-black pb-[173px] md:pb-[168px] lg:pb-0 pt-[153px] sm:pt-[168px]  lg:pt-[184px] relative ">
       <div className="absolute bottom-0 right-0 w-full h-full ">
         <img
           src={bgImage}
@@ -22,7 +23,7 @@ const Hero = () => {
             Grow your business with targeted advertising solutions that work.
           </p>
         </div>
-        <div className="w-full  md:w-[535px] lg:w-[440px] h-[662px] bg-white rounded-3xl p-8 shadow-lgShadow"></div>
+        <ContactUs />
       </div>
     </div>
   )
