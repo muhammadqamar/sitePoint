@@ -35,7 +35,7 @@ const Cards = [
 
 const Audience = () => {
   return (
-    <div className=" w-full px-[178px] max-lg:px-[122px] max-sm:px-[20px] py-[164px] max-lg:py-[103px] max-sm:py-[80px] bg-purple_500 ">
+    <div className=" w-full px-[178px] max-lg:px-[122px] max-sm:px-[20px] py-[164px] max-lg:py-[103px] max-sm:py-[80px] bg-gradient">
       <h2 className="text-center mb-16 max-sm:mb-8 h2-text">Our Audience</h2>
       <div className="flex flex-wrap m-auto gap-x-5 gap-y-6 justify-center">
         {Cards.map(item => {
