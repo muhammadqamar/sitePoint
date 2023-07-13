@@ -1,4 +1,6 @@
-import React from "react"
+import React, { useEffect } from "react"
+import AOS from "aos"
+import "aos/dist/aos.css"
 import Mail from "../../assets/images/icons/mail.svg"
 import Eye from "../../assets/images/icons/eye.svg"
 import Loader from "../../assets/images/icons/loader.svg"
@@ -34,14 +36,26 @@ const Cards = [
 ]
 
 const Audience = () => {
+  useEffect(() => {
+    AOS.init()
+  }, [])
   return (
     <div className="w-full px-[20px] md:px-[clamp(20px,12vw,122px)] lg:px-8 ">
       <div className="max-w-[1084px] mx-auto">
-        <h2 className="text-center mb-16 max-sm:mb-8 h2-text">Our Audience</h2>
+        <h2
+          data-aos="zoom-in-up"
+          className="text-center mb-16 max-sm:mb-8 h2-text"
+        >
+          Our Audience
+        </h2>
         <div className="flex flex-wrap m-auto gap-x-5 gap-y-6 justify-center">
-          {Cards.map(item => {
+          {Cards.map((item, index) => {
             return (
-              <div className="p-5 w-full md:w-[348px]  rounded-[20px]  bg-white">
+              <div
+                key={index}
+                data-aos="zoom-in-up"
+                className="p-5 w-full md:w-[348px]  rounded-[20px]  bg-white"
+              >
                 <div className="bg-black w-11 h-11 rounded-[50px] flex mb-5">
                   <img
                     src={item.image}

@@ -6,7 +6,7 @@ import ContactUs from "./contactUs"
 
 const Hero = () => {
   return (
-    <div className="w-full h-[680px] sm:h-[550px] px-0 md:px-[clamp(20px,12vw,122px)] lg:px-8 bg-black pb-[173px] md:pb-[168px] lg:pb-0 pt-[153px] sm:pt-[168px]  lg:pt-[184px] relative ">
+    <div className="w-full h-[700px] xsm:h-[680px] sm:h-[550px] px-0 md:px-[clamp(20px,12vw,122px)] lg:px-8 bg-black pb-[173px] md:pb-[168px] lg:pb-0 pt-[153px] sm:pt-[168px]  lg:pt-[184px] relative ">
       <div className="absolute bottom-0 right-0 w-full h-full ">
         <img
           src={bgImage}
@@ -25,7 +25,10 @@ const Hero = () => {
         />
       </div>
       <div className="max-w-[1084px] mx-auto flex items-center lg:items-start justify-between  flex-col lg:flex-row gap-[48px] sm:gap-[58px]  relative z-[1] ">
-        <div className="w-full lg:w-[552px] text-left sm:text-center lg:text-left px-5 md:px-0">
+        <div
+          data-aos="fade-right"
+          className="w-full lg:w-[552px] text-left sm:text-center lg:text-left px-5 md:px-0"
+        >
           <h1 className="h1-text text-purple_400 mb-4">
             Connect your brand with over
             <span className="text-white"> 325,000 </span>

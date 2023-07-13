@@ -6,6 +6,7 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "axios": "^1.4.0",
+    "aos": "^2.3.4",
     "bootstrap": "^5.3.0",
     "formik": "^2.4.2",
     "gatsby": "^5.11.0",
