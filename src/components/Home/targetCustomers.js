@@ -44,7 +44,7 @@ const TargetCustomers = () => {
     <div className="max-w-full justify-between flex flex-col-reverse md:flex-row h-auto mt-10 mx-auto lg:w-full">
       <div>
         <div
-          data-aos="fade-right"
+          // data-aos="fade-right"
           className=" h-auto text-left lg:text-left mb-16"
         >
           <h1 className="h2-text text-black w-full md:w-[347px] lg:w-[488px] mb-4">
@@ -59,7 +59,7 @@ const TargetCustomers = () => {
           {data.map((item, index) => (
             <div
               key={index}
-              data-aos="fade-right"
+              // data-aos="fade-right"
               className="w-auto md:w-[194px] lg:w-auto flex flex-row gap-4 text-black"
             >
               <img src={item.image} alt="target Icon" className="" />
@@ -68,7 +68,7 @@ const TargetCustomers = () => {
           ))}
         </div>
         <button
-          data-aos="fade-right"
+          // data-aos="fade-right"
           className="bg-purple_200 button mt-20 w-full sm:w-fit"
         >
           Get in touch
@@ -76,7 +76,7 @@ const TargetCustomers = () => {
       </div>
 
       <img
-        data-aos="fade-left"
+        // data-aos="fade-left"
         src={MobileImage}
         alt="mobile image"
         className="w-auto sm:w-[318px] lg:w-[532px] object-contain h-[480px] sm:h-auto"

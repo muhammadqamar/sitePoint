@@ -10,7 +10,7 @@ const Footer = () => {
     <footer className="m-auto flex flex-col items-center  pb-[124px]">
       <div className="h-[1px] bg-gray_500 mb-16 w-[506px] max-sm:w-full" />
       <div
-        data-aos="fade-up"
+        // data-aos="fade-up"
         data-aos-anchor-placement="top-bottom"
         className="flex flex-col items-center gap-8"
       >

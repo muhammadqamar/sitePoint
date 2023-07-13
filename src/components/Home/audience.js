@@ -43,7 +43,7 @@ const Audience = () => {
     <div className="w-full px-[20px] md:px-[clamp(20px,12vw,122px)] lg:px-8 ">
       <div className="max-w-[1084px] mx-auto">
         <h2
-          data-aos="zoom-in-up"
+          // data-aos="zoom-in-up"
           className="text-center mb-16 max-sm:mb-8 h2-text"
         >
           Our Audience
@@ -53,7 +53,7 @@ const Audience = () => {
             return (
               <div
                 key={index}
-                data-aos="zoom-in-up"
+                // data-aos="zoom-in-up"
                 className="p-5 w-full md:w-[348px]  rounded-[20px]  bg-white"
               >
                 <div className="bg-black w-11 h-11 rounded-[50px] flex mb-5">

@@ -26,7 +26,7 @@ const Hero = () => {
       </div>
       <div className="max-w-[1084px] mx-auto flex items-center lg:items-start justify-between  flex-col lg:flex-row gap-[48px] sm:gap-[58px]  relative z-[1] ">
         <div
-          data-aos="fade-right"
+          // data-aos="fade-right"
           className="w-full lg:w-[552px] text-left sm:text-center lg:text-left px-5 md:px-0"
         >
           <h1 className="h1-text text-purple_400 mb-4">

@@ -30,7 +30,7 @@ const ContactUs = () => {
 
   return (
     <div
-      data-aos="fade-left"
+      // data-aos="fade-left"
       className="w-full  md:w-[535px] lg:w-[440px] min-h-[662px] bg-white rounded-3xl px-5 py-8 sm:p-8 shadow-none md:shadow-lgShadow"
     >
       <h3 className="h3-text mb-1">Contact us</h3>
