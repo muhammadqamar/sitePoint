@@ -37,9 +37,9 @@ const data = [
 ]
 
 const TargetCustomers = () => {
-  useEffect(() => {
-    AOS.init()
-  }, [])
+  // useEffect(() => {
+  //   AOS.init()
+  // }, [])
   return (
     <div className="max-w-full justify-between flex flex-col-reverse md:flex-row h-auto mt-10 mx-auto lg:w-full">
       <div>

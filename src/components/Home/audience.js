@@ -36,9 +36,9 @@ const Cards = [
 ]
 
 const Audience = () => {
-  useEffect(() => {
-    AOS.init()
-  }, [])
+  // useEffect(() => {
+  //   AOS.init()
+  // }, [])
   return (
     <div className="w-full px-[20px] md:px-[clamp(20px,12vw,122px)] lg:px-8 ">
       <div className="max-w-[1084px] mx-auto">

@@ -3,9 +3,9 @@ import AOS from "aos"
 import "aos/dist/aos.css"
 import SitePoint from "../../assets/images/sitePointLogo.svg"
 const Footer = () => {
-  useEffect(() => {
-    AOS.init()
-  }, [])
+  // useEffect(() => {
+  //   AOS.init()
+  // }, [])
   return (
     <footer className="m-auto flex flex-col items-center  pb-[124px]">
       <div className="h-[1px] bg-gray_500 mb-16 w-[506px] max-sm:w-full" />
