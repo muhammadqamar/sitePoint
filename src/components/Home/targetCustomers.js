@@ -1,4 +1,6 @@
-import React from "react"
+import React, { useEffect } from "react"
+import AOS from "aos"
+import "aos/dist/aos.css"
 import AdsIcon from "../../assets/images/icons/ads.svg"
 import BookIcon from "../../assets/images/icons/book.svg"
 import WriteIcon from "../../assets/images/icons/write.svg"
@@ -35,10 +37,16 @@ const data = [
 ]
 
 const TargetCustomers = () => {
+  useEffect(() => {
+    AOS.init()
+  }, [])
   return (
     <div className="max-w-full justify-between flex flex-col-reverse md:flex-row h-auto mt-10 mx-auto lg:w-full">
       <div>
-        <div className=" h-auto text-left lg:text-left mb-16">
+        <div
+          data-aos="fade-right"
+          className=" h-auto text-left lg:text-left mb-16"
+        >
           <h1 className="h2-text text-black w-full md:w-[347px] lg:w-[488px] mb-4">
             Reach your target customers with flexible and effective partnership
             options
@@ -49,17 +57,25 @@ const TargetCustomers = () => {
         </div>
         <div className="flex flex-col md:flex-row lg:flex-col flex-wrap  md:gap-x-5 gap-y-8 lg:gap-8">
           {data.map(item => (
-            <div className="w-auto md:w-[194px] lg:w-auto flex flex-row gap-4 text-black">
+            <div
+              data-aos="fade-right"
+              className="w-auto md:w-[194px] lg:w-auto flex flex-row gap-4 text-black"
+            >
               <img src={item.image} alt="target Icon" className="" />
               <p className="subheading-text m-0">{item.text}</p>
             </div>
           ))}
         </div>
-        <button className="bg-purple_200 button mt-20 w-full sm:w-fit">
+        <button
+          data-aos="fade-right"
+          className="bg-purple_200 button mt-20 w-full sm:w-fit"
+        >
           Get in touch
         </button>
       </div>
+
       <img
+        data-aos="fade-left"
         src={MobileImage}
         alt="mobile image"
         className="w-auto sm:w-[318px] lg:w-[532px] object-contain h-[480px] sm:h-auto"

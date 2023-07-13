@@ -30,6 +30,20 @@ module.exports = {
         "linear-gradient(180deg, rgba(114, 50, 250, 0.00) 0%, rgba(114, 50, 250, 0.06) 50%, rgba(255, 255, 255, 0.12) 100%)",
     },
 
+    screens: {
+      xsm: "351px",
+      sm: "640px",
+      // @media (min-width: 640px) { ... }
+      md: "768px",
+      // @media (min-width: 768px) { ... }
+      lg: "1024px",
+      // @media (min-width: 1024px) { ... }
+      xl: "	1280px",
+      // @media (min-width: 1280px) { ... }
+      "2xl": "1536px",
+      // @media (min-width: 1536px) { ... }
+    },
+
     extend: {},
   },
   plugins: [],
