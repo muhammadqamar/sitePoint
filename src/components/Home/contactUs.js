@@ -113,8 +113,8 @@ const ContactUs = () => {
                   parseInt(values.companyBudget),
                 ],
                 af208478806ff4ca7b798c1da1f48fab09473285: values.interested,
-                person_id: 28,
-                org_id: 20,
+                person_id: person?.data?.id,
+                org_id: org?.data?.id,
               })
 
               if (deal.data?.id) {
