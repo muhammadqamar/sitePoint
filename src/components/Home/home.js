@@ -6,7 +6,7 @@ import TargetCustomers from "./targetCustomers"
 
 const Home = () => {
   return (
-    <>
+    <div className="w-full overflow-x-hidden">
       <Hero />
       <div className="w-full px-[20px] md:px-[clamp(20px,12vw,122px)] lg:px-8 pt-[815px] xsm:pt-[795px] sm:pt-[680px] lg:pt-[64px] mb-[172px] md:mb-[231px] lg:mb-[275px]">
         <div className="max-w-[1084px] mx-auto mt-32 xsm:mt-20 sm:mt-0">
@@ -21,7 +21,7 @@ const Home = () => {
           <TargetCustomers />
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
