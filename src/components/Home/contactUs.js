@@ -8,6 +8,8 @@ import {
   createDeal,
 } from "../../services/piperdrive"
 
+import Loader from "../../assets/images/loading-3.gif"
+
 const labels = [
   {
     labelName: "Display Advertising",
@@ -302,7 +304,7 @@ const ContactUs = () => {
             </div>
             {isSubmitting ? (
               <button className="button bg-purple_200" type="button">
-                ....
+                <img src={Loader} alt="loader" className="w-24 h-auto" />
               </button>
             ) : (
               <button className="button bg-purple_200" type="submit">

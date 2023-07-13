@@ -1,6 +1,6 @@
 import axios from "axios"
 
-const baseURL = process.env.GATSBY_API_URL_PIPER || 'https://sitepoint2.pipedrive.com'
+const baseURL = process.env.GATSBY_API_URL_PIPER
 
 const http = axios.create({ baseURL: `${baseURL}/v1` })
 

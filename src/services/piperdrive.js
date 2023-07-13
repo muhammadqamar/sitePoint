@@ -1,6 +1,5 @@
 import httpService from "./http"
-const piperKey =
-  process.env.GATSBY_API_KEY || "fed49ea2bc194fbbe81dd0eeedfdaabb46125a2b"
+const piperKey = process.env.GATSBY_API_KEY
 
 export const getAllFields = () =>
   httpService
