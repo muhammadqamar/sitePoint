@@ -56,8 +56,9 @@ const TargetCustomers = () => {
           </p>
         </div>
         <div className="flex flex-col md:flex-row lg:flex-col flex-wrap  md:gap-x-5 gap-y-8 lg:gap-8">
-          {data.map(item => (
+          {data.map((item, index) => (
             <div
+              key={index}
               data-aos="fade-right"
               className="w-auto md:w-[194px] lg:w-auto flex flex-row gap-4 text-black"
             >

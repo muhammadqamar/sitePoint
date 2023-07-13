@@ -1,7 +1,33 @@
-import React from "react"
+import React, { useState } from "react"
 import { Formik } from "formik"
 
+const labels = [
+  {
+    labelName: "Display Advertising",
+    name: "DisplayAdvertising",
+  },
+  {
+    labelName: "Newsletter Sponsorship",
+    name: "NewsletterSponsorship",
+  },
+  {
+    labelName: "Sponsored Content",
+    name: "SponsoredContent",
+  },
+  {
+    labelName: "Email Marketing",
+    name: "EmailMarketing",
+  },
+  {
+    labelName: "Other",
+    name: "Other",
+  },
+]
+
 const ContactUs = () => {
+  const [activeLabel, setActiveLabel] = useState()
+  const [selectedLabel, setSelectedLabel] = useState("")
+
   return (
     <div
       data-aos="fade-left"
@@ -19,6 +45,7 @@ const ContactUs = () => {
           company: "",
           companyBudget: "",
           otherCompany: "",
+          interested: selectedLabel,
         }}
         validate={values => {
           const errors = {}
@@ -151,19 +178,20 @@ const ContactUs = () => {
                 What partnership are you interested in?
               </p>
               <div className="w-full flex gap-[6px] flex-wrap">
-                <label className="labels body-small-text">
-                  Display Advertising
-                </label>
-                <label className="labels body-small-text">
-                  Newsletter Sponsorship
-                </label>
-                <label className="labels body-small-text">
-                  Sponsored Content
-                </label>
-                <label className="labels body-small-text">
-                  Email Marketing
-                </label>
-                <label className="labels body-small-text">Other</label>
+                {labels.map((item, i) => (
+                  <label
+                    key={i}
+                    onClick={() => {
+                      setActiveLabel(i)
+                      setSelectedLabel(item.name)
+                    }}
+                    className={` ${
+                      activeLabel === i && "active"
+                    } labels body-small-text`}
+                  >
+                    {item.labelName}
+                  </label>
+                ))}
               </div>
             </div>
             <div className="w-full flex flex-col gap-1">

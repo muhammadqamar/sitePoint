@@ -49,9 +49,10 @@ const Audience = () => {
           Our Audience
         </h2>
         <div className="flex flex-wrap m-auto gap-x-5 gap-y-6 justify-center">
-          {Cards.map(item => {
+          {Cards.map((item, index) => {
             return (
               <div
+                key={index}
                 data-aos="zoom-in-up"
                 className="p-5 w-full md:w-[348px]  rounded-[20px]  bg-white"
               >

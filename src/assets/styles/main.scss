@@ -40,6 +40,9 @@ p {
 .labels {
   @apply w-fit inline-flex py-2 px-[10px] rounded-full items-center justify-center bg-white_200 hover:bg-white_300 cursor-pointer;
 }
+.labels.active {
+  @apply bg-black text-white;
+}
 
 // typography styles
 
