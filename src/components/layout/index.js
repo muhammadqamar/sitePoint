@@ -10,13 +10,12 @@ import Header from "./header"
 import Footer from "./footer"
 
 const Layout = ({ children }) => {
-
   return (
-    <>
+    <div className="sitepoint-new-marketing">
       <Header />
       <main>{children}</main>
       <Footer />
-    </>
+    </div>
   )
 }
 

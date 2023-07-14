@@ -67,12 +67,14 @@ const TargetCustomers = () => {
             </div>
           ))}
         </div>
-        <button
-          // data-aos="fade-right"
-          className="bg-purple_200 button mt-20 w-full sm:w-fit"
-        >
-          Get in touch
-        </button>
+        <a href="#home">
+          <button
+            // data-aos="fade-right"
+            className="bg-primary-700 button mt-20 w-full sm:w-fit"
+          >
+            Get in touch
+          </button>
+        </a>
       </div>
 
       <img

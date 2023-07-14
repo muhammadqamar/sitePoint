@@ -13,6 +13,7 @@ body {
 
 * {
   @apply m-0 p-0 box-border;
+  scroll-behavior: smooth;
 }
 
 h1,
@@ -24,58 +25,47 @@ h6,
 p {
   @apply m-0 p-0;
 }
-
-.container {
+.sitepoint-new-marketing .container {
   @apply max-w-[1440px] mx-auto;
 }
 
-// button styles
-
-.button {
+.sitepoint-new-marketing .button {
   @apply flex items-center justify-center py-2 px-6 rounded-[56px] h-[56px] text-base font-semibold text-white hover:bg-purple_300;
 }
-// labels
 
-.labels {
+.sitepoint-new-marketing .labels {
   @apply w-fit inline-flex py-2 px-[10px] rounded-full items-center justify-center bg-white_200 hover:bg-white_300 cursor-pointer;
 }
-.labels.active {
-  @apply bg-black text-white;
+
+.sitepoint-new-marketing .labels.active {
+  @apply text-white bg-black;
 }
 
-// typography styles
-
-.h1-text {
+.sitepoint-new-marketing .h1-text {
   @apply font-bold text-5xl leading-[58px] tracking-[-1.92px];
 }
-.h2-text {
+.sitepoint-new-marketing .h2-text {
   @apply font-bold text-4xl tracking-[-1.92px] text-black;
 }
-.h3-text {
+.sitepoint-new-marketing .h3-text {
   @apply font-bold text-2xl tracking-[-0.4px] text-black;
 }
-.subheading-text {
+.sitepoint-new-marketing .subheading-text {
   @apply font-normal text-xl leading-6 tracking-[-0.4px] text-black;
 }
-.small-text {
+.sitepoint-new-marketing .small-text {
   @apply text-base font-normal;
 }
-.body-small-text {
+.sitepoint-new-marketing .body-small-text {
   @apply font-normal text-sm tracking-[-0.16px];
 }
-.caption-text {
+.sitepoint-new-marketing .caption-text {
   @apply font-semibold text-xs tracking-[0.1px];
 }
-// input style
-
-.input {
-  @apply w-full border border-solid rounded-[7px] focus-visible:outline-1 focus-visible:outline  focus-visible:outline-purple_200 hover:border-gray_300  bg-white flex items-center self-stretch border-gray_600 py-[10px] px-3;
+.sitepoint-new-marketing .input {
+  @apply w-full border border-solid rounded-[7px] focus-visible:outline-1 focus-visible:outline  focus-visible:outline-primary-700 hover:border-gray_300  bg-white flex items-center self-stretch border-gray_600 py-[10px] px-3;
 }
-
-// select style
-
-.select-style {
-  // remove icon
+.sitepoint-new-marketing .select-style {
   margin: 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -83,7 +73,6 @@ p {
   -webkit-appearance: none;
   -moz-appearance: none;
 
-  // icon
   background-image: url("../images/icons/Expand.svg");
   background-position: calc(100% - 8px) calc(1em + -4px),
     calc(100% - 15px) calc(1em + 2px), calc(100% - 0.5em) 0.5em;

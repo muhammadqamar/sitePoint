@@ -1,4 +1,5 @@
 import React, { useEffect } from "react"
+import { Link } from "gatsby"
 import AOS from "aos"
 import "aos/dist/aos.css"
 import SitePoint from "../../assets/images/sitePointLogo.svg"
@@ -14,7 +15,9 @@ const Footer = () => {
         data-aos-anchor-placement="top-bottom"
         className="flex flex-col items-center gap-8"
       >
-        <img src={SitePoint} alt="SitePoint's Logo" className="gap-8" />
+        <Link to="https://sitepoint.com" target="_blank">
+          <img src={SitePoint} alt="SitePoint's Logo" className="gap-8" />
+        </Link>
         <span>
           © {new Date().getFullYear()} Sitepoint. All rights reserved.
         </span>
