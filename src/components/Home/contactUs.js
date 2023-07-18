@@ -226,9 +226,9 @@ const ContactUs = () => {
                     </p>
                     <div className="w-fit relative  object-contain cursor-pointer">
                       {toolTip && (
-                        <div className="w-[260px] absolute z-50 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-125%] inline-block px-3 py-2 body-small-text text-black transition-opacity duration-300 bg-white_200 rounded-lg shadow-sm shadow-smShadow">
+                        <div className="w-[260px] absolute z-50 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-140%] inline-block px-3 py-2 body-small-text text-black transition-opacity duration-300 bg-white_200 rounded-lg shadow-sm shadow-smShadow">
                           Disable or remove the ad blocker extension in your
-                          browser settings to remove its effects.
+                          browser settings.
                         </div>
                       )}
                       <img
