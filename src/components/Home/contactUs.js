@@ -9,11 +9,13 @@ import {
 } from "../../services/piperdrive"
 import ThankYouPage from "./thankYou"
 import Loader from "../../assets/images/loading-3.gif"
+import Info from "../../assets/images/icons/info.svg"
 
 const ContactUs = () => {
   const [selectedLabel, setSelectedLabel] = useState([])
   const [allDealField, setAllDealField] = useState([])
   const [formSubmit, setFormSubmit] = useState(false)
+  const [toolTip, setToolTip] = useState(false)
 
   useEffect(() => {
     ;(async () => {
@@ -218,9 +220,26 @@ const ContactUs = () => {
                   </div>
                 </div>
                 <div className="w-full">
-                  <p className="mb-3 caption-text text-gray_400">
-                    What partnership are you interested in?
-                  </p>
+                  <div className="mb-3 flex items-center gap-2 ">
+                    <p className=" caption-text text-gray_400 m-0">
+                      What partnership are you interested in?
+                    </p>
+                    <div className="w-fit relative  object-contain cursor-pointer">
+                      {toolTip && (
+                        <div className="w-[260px] absolute z-50 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-125%] inline-block px-3 py-2 body-small-text text-black transition-opacity duration-300 bg-white_200 rounded-lg shadow-sm shadow-smShadow">
+                          Disable or remove the ad blocker extension in your
+                          browser settings to remove its effects.
+                        </div>
+                      )}
+                      <img
+                        onMouseEnter={() => setToolTip(true)}
+                        onMouseLeave={() => setToolTip(false)}
+                        src={Info}
+                        alt="info"
+                        className="w-5 h-5 object-contain cursor-pointer"
+                      />
+                    </div>
+                  </div>
                   <div className="w-full flex gap-[6px] flex-wrap">
                     {allDealField
                       ?.filter(check => check.name === "Partnership Type")?.[0]
@@ -284,7 +303,10 @@ const ContactUs = () => {
                     <img src={Loader} alt="loader" className="w-24 h-auto" />
                   </button>
                 ) : (
-                  <button className="button bg-primary-700" type="submit">
+                  <button
+                    className="button bg-primary-700 w-full"
+                    type="submit"
+                  >
                     Submit
                   </button>
                 )}
