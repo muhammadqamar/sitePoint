@@ -60,32 +60,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        // The property ID; the tracking code won't be generated without it
         trackingId: "G-W35YWY4VJ0",
-        // Defines where to place the tracking script - `true` in the head and `false` in the body
-        head: false,
-        // Setting this parameter is optional
-        anonymize: true,
-        // Setting this parameter is also optional
-        respectDNT: true,
-        // Avoids sending pageview hits from custom paths
-        exclude: ["/preview/**", "/do-not-track/me/too/"],
-        // Delays sending pageview hits on route update (in milliseconds)
-        pageTransitionDelay: 0,
-        // Enables Google Optimize using your container Id
-        optimizeId: "G-W35YWY4VJ0",
-        // Enables Google Optimize Experiment ID
-        experimentId: "G-W35YWY4VJ0",
-        // Set Variation ID. 0 for original 1,2,3....
-        variationId: "5846476448",
-        // Defers execution of google analytics script after page load
-        defer: false,
-        // Any additional optional fields
-        sampleRate: 5,
-        siteSpeedSampleRate: 10,
-        cookieDomain: "https://site-point.netlify.app/",
-        // defaults to false
-        enableWebVitalsTracking: true,
+        head: true,
       },
     },
   ],
