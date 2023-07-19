@@ -29,17 +29,33 @@ const ContactUs = () => {
   return (
     <div
       // data-aos="fade-left"
-      className="w-full  md:w-[535px] lg:w-[440px] min-h-[662px] bg-white rounded-3xl px-5 py-8 sm:p-8 shadow-none md:shadow-lgShadow"
+      className="w-full relative  md:w-[535px] lg:w-[440px] min-h-[662px] bg-white rounded-3xl px-5 py-8 sm:p-8 shadow-none md:shadow-lgShadow"
     >
       {formSubmit ? (
         <ThankYouPage setFormSubmit={setFormSubmit} />
       ) : (
         <>
+          <div className=" flex items-center gap-2 ">
           <h3 className="mb-1 h3-text">Contact us</h3>
+          <div className="w-fit relative  object-contain cursor-pointer">
+                      <img
+                        onMouseEnter={() => setToolTip(true)}
+                        onMouseLeave={() => setToolTip(false)}
+                        src={Info}
+                        alt="info"
+                        className="w-5 h-5 object-contain cursor-pointer"
+                      />
+                    </div>
+          </div>
           <p className="mb-8 body-small-text text-gray_400">
             The minimum campaign spend is $1,000 USD
           </p>
-
+          {toolTip && (
+                        <div className="xl:min-w-[240px] xl:text-[0.8rem] md:min-w-[200px] md:text-[0.7rem] sm:min-w-[230px] sm:text-[0.8rem] lg:min-w-[205px] lg:text-[0.7rem]  lg:pl-3 absolute z-50 top-[1%] max-xsm:top-[-4.5%] right-[1%] inline-block pl-3 pr-1 py-2 text-black transition-opacity duration-300 bg-white_200 rounded-lg shadow-sm shadow-[0_2px_10px_0_rgba(0,0,0,0.2)] xsm:text-[0.6rem] xsm:w-[171px] xsm:pl-2">
+                          Disable or remove the ad blocker extension in your
+                          browser settings.
+                        </div>
+                      )}
           <Formik
             initialValues={{
               name: "",
@@ -220,25 +236,10 @@ const ContactUs = () => {
                   </div>
                 </div>
                 <div className="w-full">
-                  <div className="mb-3 flex items-center gap-2 ">
+                  <div className="mb-3">
                     <p className=" caption-text text-gray_400 m-0">
                       What partnership are you interested in?
                     </p>
-                    <div className="w-fit relative  object-contain cursor-pointer">
-                      {toolTip && (
-                        <div className="w-[260px] absolute z-50 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-140%] inline-block px-3 py-2 body-small-text text-black transition-opacity duration-300 bg-white_200 rounded-lg shadow-sm shadow-smShadow">
-                          Disable or remove the ad blocker extension in your
-                          browser settings.
-                        </div>
-                      )}
-                      <img
-                        onMouseEnter={() => setToolTip(true)}
-                        onMouseLeave={() => setToolTip(false)}
-                        src={Info}
-                        alt="info"
-                        className="w-5 h-5 object-contain cursor-pointer"
-                      />
-                    </div>
                   </div>
                   <div className="w-full flex gap-[6px] flex-wrap">
                     {allDealField
