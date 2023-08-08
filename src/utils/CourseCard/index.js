@@ -18,7 +18,7 @@ const TestLogo = [
 const CourseCard = props => {
   const { Icon, subheading, text } = props
   return (
-    <div className="max-w-[348px] flex flex-col items-start justify-between gap-2 w-full min-h-[176px] bg-white rounded-[20px] p-5 ">
+    <div className="max-w-full md:max-w-[348px] flex flex-col items-start justify-between gap-2 w-full min-h-[176px] bg-white rounded-[20px] p-5 ">
       {Icon && (
         <div className="flex items-center">
           {TestLogo.map(item => (

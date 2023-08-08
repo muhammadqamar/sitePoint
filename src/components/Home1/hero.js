@@ -12,7 +12,7 @@ const Hero = () => {
             publishing partners.
           </p>
 
-          <button className="button border border-solid !mx-auto hover:border-black hover:text-black hover:!bg-[transparent]">
+          <button className="button border border-solid !mx-auto hover:border-none hover:text-white hover:!bg-primary-700">
             Get a Quote
           </button>
         </div>
