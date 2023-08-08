@@ -35,7 +35,7 @@ const Footer = () => {
       </div>
     </footer>
   ) : (
-    <footer className=" w-full px-[20px] md:px-[clamp(20px,12vw,122px)] py-[120px] bg-black">
+    <footer className=" w-full px-[20px] md:px-[clamp(20px,12vw,122px)] xs:py-8 xsm:py-12 md:py-[120px] bg-black">
       <div className="max-w-[1084px] mx-auto ">
         <div className="w-full  flex-col justify-start items-start gap-2.5 inline-flex">
           <div className="justify-start items-start gap-5 inline-flex flex-wrap">

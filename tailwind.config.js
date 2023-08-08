@@ -98,6 +98,7 @@ module.exports = {
 
     screens: {
       xsm: "351px",
+      xs: "320px",
       sm: "640px",
       // @media (min-width: 640px) { ... }
       md: "768px",

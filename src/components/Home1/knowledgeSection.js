@@ -51,9 +51,9 @@ const KnowledgeSection = () => {
   }, [])
 
   return (
-    <div className="w-full flex items-center justify-between gap-8 lg:gap-5 pb-[135px] flex-wrap lg:flex-nowrap">
+    <div className="w-full flex items-center justify-between gap-9 lg:gap-5 xs:pb-14 xsm:pb-16 md:pb-[135px] flex-wrap lg:flex-nowrap">
       <div className="max-w-[517px]">
-        <h2 className="h2-text !leading-[44px] ">
+        <h2 className="h2-text md:!leading-[44px] ">
           Reach out to us and equip your team with knowledge
         </h2>
       </div>

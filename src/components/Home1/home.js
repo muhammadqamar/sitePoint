@@ -18,7 +18,7 @@ const Home = () => {
 
           {/* add section */}
 
-          <div className=" w-full flex items-center justify-between gap-5 flex-wrap my-32">
+          <div className=" w-full flex items-center justify-center lg:justify-between gap-5 flex-wrap my-16 md:my-20 lg:my-32">
             <TotalProgress heading="700+" subheading="Books & Courses" />
             <TotalProgress
               heading="35+"
@@ -31,17 +31,55 @@ const Home = () => {
           </div>
 
           <div className="w-full">
-            <h2 className="h2-text mb-14">All the latest skills</h2>
+            <h2 className="h2-text xs:mb-10 md:mb-14">All the latest skills</h2>
             <div className="w-full flex items-center gap-5 flex-wrap">
               <LatestSkill
                 timer="10:38:34"
                 text="A Complete Guide to Learning ChatGPT 4"
                 rating="3.3"
+                bg="bg-[url('../../assets/images/bg-skill-img.png')]"
+              />
+              <LatestSkill
+                timer="10:38:34"
+                text="Become the CSS Hero of Your Office"
+                rating="3.3"
+                bg="bg-[url('../../assets/images/bg-card2.png')]"
+              />
+              <LatestSkill
+                timer="10:38:34"
+                text="Master CSS Layouts with Flexbox"
+                rating="3.3"
+                bg="bg-[url('../../assets/images/bg-card3.png')]"
+              />
+              <LatestSkill
+                timer="10:38:34"
+                text="Create Animations with CSS"
+                rating="3.3"
+                bg="bg-[url('../../assets/images/bg-card4.png')]"
+              />
+              <LatestSkill
+                timer="10:38:34"
+                text="Become the CSS Hero of Your Office"
+                rating="3.3"
+                bg="bg-[url('../../assets/images/bg-card5.png')]"
+              />
+              <LatestSkill
+                timer="10:38:34"
+                text="Master CSS Layouts with Flexbox"
+                rating="3.3"
+                bg="bg-[url('../../assets/images/bg-card6.png')]"
+              />
+              <LatestSkill
+                timer="10:38:34"
+                text="Create Animations with CSS"
+                rating="3.3"
+                bg="bg-[url('../../assets/images/bg-card7.png')]"
               />
               <LatestSkill
                 timer="10:38:34"
                 text="A Complete Guide to Learning ChatGPT 4"
                 rating="3.3"
+                bg="bg-[url('../../assets/images/bg-card8.png')]"
               />
             </div>
           </div>
@@ -102,7 +140,7 @@ const FeatureImg = () => {
       <img
         src={SitepointFeatureImg}
         alt="site point"
-        className="w-auto h-auto object-contain"
+        className="w-full h-auto object-cover"
       />
     </div>
   )
