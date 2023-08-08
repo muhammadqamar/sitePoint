@@ -1,11 +1,16 @@
-import * as React from "react"
+import React, { useEffect, useState } from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 const Header = () => {
-  const location = React.useMemo(() => {
-    return window.location.pathname
+  const [location, setLocation] = useState("")
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setLocation(window.location.pathname)
+    }
   }, [])
+
   return location === "/" ? (
     <header className="w-full absolute top-0 left-0 z-[5] bg-black px-[30px] pt-[89px] sm:pt-6">
       <div className="max-w-[1084px] mx-auto">

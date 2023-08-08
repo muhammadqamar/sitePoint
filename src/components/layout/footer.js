@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo } from "react"
+import React, { useEffect, useState } from "react"
 import { Link } from "gatsby"
 // import AOS from "aos"
 import "aos/dist/aos.css"
@@ -7,10 +7,13 @@ import XIcon from "../../assets/images/logo/twitter.svg"
 import RssIcon from "../../assets/images/logo/rss-round.svg"
 import Facebook from "../../assets/images/logo/facebook.svg"
 const Footer = () => {
-  const location = useMemo(() => {
-    return window.location.pathname
-  }, [])
+  const [location, setLocation] = useState("")
 
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setLocation(window.location.pathname)
+    }
+  }, [])
   // useEffect(() => {
 
   //    AOS.init()
