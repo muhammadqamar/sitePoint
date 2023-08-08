@@ -59,7 +59,7 @@ const Header = () => {
                 Library
               </Link>
               <Link
-                t0="/"
+                to="/"
                 className="text-center text-white small-text !font-semibold "
               >
                 Login
