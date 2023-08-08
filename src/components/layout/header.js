@@ -27,7 +27,7 @@ const Header = () => {
   ) : (
     <header className="w-full absolute top-0 left-0 z-[5] bg-black px-[20px] md:px-[clamp(20px,12vw,122px)]">
       <div className="max-w-[1084px] mx-auto ">
-        <div className=" w-full  py-4 justify-between items-center  inline-flex">
+        <div className="w-full py-4 justify-between gap-2 xsm:gap-0 items-center inline-flex">
           <div className="">
             <Link to="https://sitepoint.com" target="_blank">
               <StaticImage
@@ -66,7 +66,10 @@ const Header = () => {
               </Link>
             </div>
 
-            <button className="button bg-primary-700 w-full" type="button">
+            <button
+              className="button bg-primary-700 w-full xs:whitespace-pre xsm:whitespace-normal"
+              type="button"
+            >
               Join Premium
             </button>
           </div>
