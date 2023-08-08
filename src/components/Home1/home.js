@@ -48,7 +48,12 @@ const Home = () => {
 
           <div className="w-full my-32">
             <h2 className="h2-text mb-14">A path for everyone</h2>
-            <div className="w-full flex items-center gap-5  flex-wrap">
+            <div className="w-full sm:w-[inherit] lg:w-full flex items-center gap-5  flex-wrap overflow-hidden">
+              <CourseCard
+                Icon
+                subheading="Full Stack JavaScript Developer"
+                text="Learning Path"
+              />
               <CourseCard
                 Icon
                 subheading="Full Stack JavaScript Developer"
