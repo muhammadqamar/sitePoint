@@ -38,7 +38,7 @@ const Footer = () => {
     <footer className=" w-full px-[20px] md:px-[clamp(20px,12vw,122px)] py-[120px] bg-black">
       <div className="max-w-[1084px] mx-auto ">
         <div className="w-full  flex-col justify-start items-start gap-2.5 inline-flex">
-          <div className="justify-start items-start gap-5 inline-flex">
+          <div className="justify-start items-start gap-5 inline-flex flex-wrap">
             <div className="w-64 flex-col justify-center items-start gap-8 inline-flex">
               <h4 className="subheading-text text-center !text-white ">
                 Stuff we do

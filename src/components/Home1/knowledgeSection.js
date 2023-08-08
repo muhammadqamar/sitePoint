@@ -51,13 +51,13 @@ const KnowledgeSection = () => {
   }, [])
 
   return (
-    <div className="w-full flex items-center justify-between gap-5 pb-[135px]">
+    <div className="w-full flex items-center justify-between gap-8 lg:gap-5 pb-[135px] flex-wrap lg:flex-nowrap">
       <div className="max-w-[517px]">
         <h2 className="h2-text !leading-[44px] ">
           Reach out to us and equip your team with knowledge
         </h2>
       </div>
-      <div className="w-[440px] min-h-[648px] flex-shrink-0 p-8 bg-white rounded-[25px] shadow-lgShadow flex-col justify-start items-center gap-8 inline-flex">
+      <div className="w-full md:w-[440px] min-h-[648px] flex-shrink-0 p-8 bg-white rounded-[25px] shadow-lgShadow flex-col justify-start items-center gap-8 inline-flex">
         {formSubmit ? (
           <ThankYouPage setFormSubmit={setFormSubmit} />
         ) : (

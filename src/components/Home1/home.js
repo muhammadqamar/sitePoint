@@ -18,7 +18,7 @@ const Home = () => {
 
           {/* add section */}
 
-          <div className=" w-full flex items-center justify-between gap-5 my-32">
+          <div className=" w-full flex items-center justify-between gap-5 flex-wrap my-32">
             <TotalProgress heading="700+" subheading="Books & Courses" />
             <TotalProgress
               heading="35+"

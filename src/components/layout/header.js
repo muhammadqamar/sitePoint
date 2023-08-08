@@ -39,30 +39,32 @@ const Header = () => {
             </Link>
           </div>
           <div className="justify-center items-center gap-8 flex">
-            <Link
-              to="/"
-              className="text-center text-white small-text !font-semibold "
-            >
-              Blog
-            </Link>
-            <Link
-              to="/"
-              className="text-center text-white small-text !font-semibold "
-            >
-              Forum
-            </Link>
-            <Link
-              to="/"
-              className="text-center text-white small-text !font-semibold "
-            >
-              Library
-            </Link>
-            <Link
-              t0="/"
-              className="text-center text-white small-text !font-semibold "
-            >
-              Login
-            </Link>
+            <div className="justify-center items-center gap-8 hidden lg:flex ">
+              <Link
+                to="/"
+                className="text-center text-white small-text !font-semibold "
+              >
+                Blog
+              </Link>
+              <Link
+                to="/"
+                className="text-center text-white small-text !font-semibold "
+              >
+                Forum
+              </Link>
+              <Link
+                to="/"
+                className="text-center text-white small-text !font-semibold "
+              >
+                Library
+              </Link>
+              <Link
+                t0="/"
+                className="text-center text-white small-text !font-semibold "
+              >
+                Login
+              </Link>
+            </div>
 
             <button className="button bg-primary-700 w-full" type="button">
               Join Premium
