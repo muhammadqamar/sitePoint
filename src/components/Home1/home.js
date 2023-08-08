@@ -18,7 +18,7 @@ const Home = () => {
 
           {/* add section */}
 
-          <div className=" w-full flex items-center justify-center lg:justify-between gap-5 flex-wrap my-16 md:my-20 lg:my-32">
+          <div className=" w-full flex items-center justify-center lg:justify-between gap-5 flex-wrap xs:my-10 xsm:my-16 md:my-20 lg:my-32">
             <TotalProgress heading="700+" subheading="Books & Courses" />
             <TotalProgress
               heading="35+"
@@ -84,7 +84,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="w-full my-32">
+          <div className="w-full xs:my-10 xsm:my-16 md:my-20 lg:my-32">
             <h2 className="h2-text mb-14">A path for everyone</h2>
             <div className="w-full sm:w-[inherit] lg:w-full flex items-center gap-5  flex-wrap overflow-hidden">
               <CourseCard
