@@ -83,11 +83,14 @@ module.exports = {
       lgShadow:
         " 0px 2.201359510421753px 5.538156986236572px 0px rgba(0, 0, 0, 0.00), 0px 5.118332862854004px 12.876648902893066px 0px rgba(0, 0, 0, 0.00), 0px 9.191340446472168px 23.123476028442383px 0px rgba(0, 0, 0, 0.00), 0px 15.254220962524414px 38.376407623291016px 0px rgba(0, 0, 0, 0.01), 0px 25.130813598632812px 63.223838806152344px 0px rgba(0, 0, 0, 0.03), 0px 43.92137908935547px 110.49694061279297px 0px rgba(0, 0, 0, 0.07), 0px 95px 239px 0px rgba(0, 0, 0, 0.16);",
       smShadow: "-7px 10px 20px 0px rgba(195, 190, 190, 59%)",
+      mdShadow: "0px 0px 0px 2px rgba(114, 50, 248, 0.00)",
     },
     backgroundImage: {
       RGBImage: "url(/images/purple-RGB.png)",
       bgGradient:
         "linear-gradient(180deg, rgba(114, 50, 250, 0.00) 0%, rgba(114, 50, 250, 0.06) 50%, rgba(255, 255, 255, 0.12) 100%)",
+      cardGradient:
+        "linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%)",
     },
 
     screens: {
