@@ -12,9 +12,12 @@ const Hero = () => {
             publishing partners.
           </p>
 
-          <button className="button border border-solid !mx-auto hover:border-none hover:text-white hover:!bg-primary-700">
+          <a
+            href="#knowledge"
+            className="button !w-fit border border-solid !mx-auto hover:border-none hover:text-white hover:!bg-primary-700"
+          >
             Get a Quote
-          </button>
+          </a>
         </div>
       </div>
     </div>

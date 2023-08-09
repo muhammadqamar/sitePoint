@@ -1,5 +1,12 @@
 import React, { useEffect, useState } from "react"
 import { Formik } from "formik"
+
+import {
+  getAllFields,
+  createOrganization,
+  createPerson,
+  createDeal,
+} from "../../services/piperdrive"
 import ThankYouPage from "../Home/thankYou"
 import Loader from "../../assets/images/loading-3.gif"
 
@@ -46,8 +53,15 @@ const KnowledgeSection = () => {
   const [allDealField, setAllDealField] = useState([])
   const [formSubmit, setFormSubmit] = useState(false)
 
+  console.log("allDealField", allDealField)
+
   useEffect(() => {
-    setAllDealField(dataOption)
+    ;(async () => {
+      const result = await getAllFields()
+      if (result?.data) {
+        setAllDealField(result?.data)
+      }
+    })()
   }, [])
 
   return (
@@ -96,34 +110,27 @@ const KnowledgeSection = () => {
               return errors
             }}
             onSubmit={async (values, { setSubmitting }) => {
-              console.log(values)
-              // const org = await createOrganization({
-              //   name: values.company,
-              // })
-              // if (org?.data?.id) {
-              //   const person = await createPerson({
-              //     name: values.name,
-              //     email: values.email,
-              //     org_id: org?.data?.id,
-              //   })
-              //   if (person?.data?.id) {
-              //     const deal = await createDeal({
-              //       title: values.company + " deal",
-              //       "413baf5a43f00f7e8a8bcbf7ba9d99add75a6e4b":
-              //         values.otherCompany,
-              //       cd4eb20830f842fc341411c47a3bd4b017cefb82: [
-              //         parseInt(values.companyBudget),
-              //       ],
-              //       af208478806ff4ca7b798c1da1f48fab09473285: values.interested,
-              //       person_id: person?.data?.id,
-              //       org_id: org?.data?.id,
-              //     })
-              //     if (deal.data?.id) {
-              //       setSelectedLabel([])
-              //       setFormSubmit(true)
-              //     }
-              //   }
-              // }
+              const person = await createPerson({
+                name: values.name,
+                email: values.email,
+              })
+              if (person?.data?.id) {
+                const deal = await createDeal({
+                  title: values.company + " deal",
+                  "413baf5a43f00f7e8a8bcbf7ba9d99add75a6e4b":
+                    values.otherCompany,
+                  "9e4cd248a2088bd2a0e72054ea8e8028d87287f6":
+                    values.typeOfEntity,
+                  e511dbc5e324d1ee22786d507a7171b44892ee61:
+                    values.licensesInterested,
+                  person_id: person?.data?.id,
+                })
+                if (deal.data?.id) {
+                  setSelectedLabel([])
+                  setSelectedLicensesLabel([])
+                  setFormSubmit(true)
+                }
+              }
             }}
           >
             {({
@@ -178,7 +185,7 @@ const KnowledgeSection = () => {
                   </div>
                   <div className="w-full flex gap-[6px] flex-wrap">
                     {allDealField
-                      ?.filter(check => check.name === "entity")?.[0]
+                      ?.filter(check => check.name === "Entity Type")?.[0]
                       ?.options?.map(data => {
                         return (
                           <label
@@ -223,7 +230,9 @@ const KnowledgeSection = () => {
                   </div>
                   <div className="w-full flex gap-[6px] flex-wrap">
                     {allDealField
-                      ?.filter(check => check.name === "licenses")?.[0]
+                      ?.filter(
+                        check => check.name === "Number of Licenses"
+                      )?.[0]
                       ?.options?.map(data => {
                         return (
                           <label

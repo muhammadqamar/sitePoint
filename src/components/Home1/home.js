@@ -124,8 +124,9 @@ const Home = () => {
               />
             </div>
           </div>
-
-          <KnowledgeSection />
+          <div id="knowledge">
+            <KnowledgeSection />
+          </div>
         </div>
       </div>
     </>
