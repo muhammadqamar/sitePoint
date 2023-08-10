@@ -41,37 +41,42 @@ const Header = () => {
           <div className="justify-center items-center gap-8 flex">
             <div className="justify-center items-center gap-8 hidden lg:flex ">
               <Link
-                to="/"
+                to="https://www.sitepoint.com/blog/"
+                target="_blank"
                 className="text-center text-white small-text !font-semibold "
               >
                 Blog
               </Link>
               <Link
-                to="/"
+                to="https://www.sitepoint.com/community/"
+                target="_blank"
                 className="text-center text-white small-text !font-semibold "
               >
                 Forum
               </Link>
               <Link
-                to="/"
+                to="https://www.sitepoint.com/premium/library/"
+                target="_blank"
                 className="text-center text-white small-text !font-semibold "
               >
                 Library
               </Link>
               <Link
-                to="/"
+                to="https://www.sitepoint.com/premium/sign-in/"
+                target="_blank"
                 className="text-center text-white small-text !font-semibold "
               >
                 Login
               </Link>
             </div>
 
-            <button
+            <Link
+              to="https://www.sitepoint.com/premium/pricing/?ref_source=sitepoint&ref_medium=topnav"
+              target="_blank"
               className="button bg-primary-700 w-full xs:whitespace-pre xsm:whitespace-normal"
-              type="button"
             >
               Join Premium
-            </button>
+            </Link>
           </div>
         </div>
       </div>

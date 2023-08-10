@@ -9,7 +9,7 @@ const Hero = () => {
           <p className="small-text tracking-[-0.16px] mb-8">
             Sitepoint for Teams gives your company, school, or any other group
             access to our entire library of books and courses from Sitepoint and
-            publishing partners.
+            our publishing partners.
           </p>
 
           <a

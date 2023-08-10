@@ -44,19 +44,22 @@ const Footer = () => {
                 Stuff we do
               </h4>
               <Link
-                to="/"
+                to="https://www.sitepoint.com/premium/library/"
+                target="_blank"
                 className="text-center text-gray_200 small-text tracking-[-0.16px] "
               >
                 Premium
               </Link>
               <Link
-                to="/"
+                to="https://www.sitepoint.com/newsletters/"
+                target="_blank"
                 className="text-center text-gray_200 small-text tracking-[-0.16px]"
               >
                 Newsletters
               </Link>
               <Link
-                to="/"
+                to="https://www.sitepoint.com/community/"
+                target="_blank"
                 className="text-center text-gray_200 small-text tracking-[-0.16px]"
               >
                 Forums
@@ -65,25 +68,29 @@ const Footer = () => {
             <div className="w-64 flex-col justify-center items-start gap-8 inline-flex">
               <h4 className="subheading-text text-center !text-white">About</h4>
               <Link
-                to="/"
+                to="https://www.sitepoint.com/about-us/"
+                target="_blank"
                 className="text-center text-gray_200 small-text tracking-[-0.16px]"
               >
                 Our story
               </Link>
               <Link
-                to="/"
+                to="https://www.sitepoint.com/legals/"
+                target="_blank"
                 className="text-center text-gray_200 small-text tracking-[-0.16px]"
               >
                 Terms of use
               </Link>
               <Link
-                to="/"
+                to="https://www.sitepoint.com/privacy-policy/"
+                target="_blank"
                 className="text-center text-gray_200 small-text tracking-[-0.16px]"
               >
                 Privacy policy
               </Link>
               <Link
-                to="/"
+                to="https://www.sitepoint.com/premium-for-teams"
+                target="_blank"
                 className="text-center text-gray_200 small-text tracking-[-0.16px]"
               >
                 Corporate memberships
@@ -94,31 +101,36 @@ const Footer = () => {
                 Contact
               </h4>
               <Link
-                to="/"
+                to="https://www.sitepoint.com/contact-us/"
+                target="_blank"
                 className="text-center text-gray_200 small-text tracking-[-0.16px]"
               >
                 Contact us
               </Link>
               <Link
-                to="/"
+                to="https://support.sitepoint.com/hc/en-us?_ga=2.52483688.1395196030.1691389008-1817298423.1685440943"
+                target="_blank"
                 className="text-center text-gray_200 small-text tracking-[-0.16px]"
               >
                 FAQ
               </Link>
               <Link
-                to="/"
+                to="https://sitepoint.typeform.com/to/HtAXVN"
+                target="_blank"
                 className="text-center text-gray_200 small-text tracking-[-0.16px]"
               >
                 Publish your book with us
               </Link>
               <Link
-                to="/"
+                to="https://www.sitepoint.com/write-for-us/"
+                target="_blank"
                 className="text-center text-gray_200 small-text tracking-[-0.16px]"
               >
                 Write an article with us
               </Link>
               <Link
-                to="/"
+                to="https://www.sitepoint.com/partnerships/"
+                target="_blank"
                 className="text-center text-gray_200 small-text tracking-[-0.16px]"
               >
                 Advertise
@@ -129,21 +141,33 @@ const Footer = () => {
                 Connect
               </h4>
               <div className="justify-start items-start gap-2 inline-flex">
-                <a href="#" className="w-8 h-8 relative rounded-full">
+                <a
+                  href="https://twitter.com/sitepointdotcom"
+                  target="_blank"
+                  className="w-8 h-8 relative rounded-full"
+                >
                   <img
                     src={XIcon}
                     alt="x-icon"
                     className="w-auto h-auto object-contain"
                   />
                 </a>
-                <a href="#" className="w-8 h-8 relative rounded-full">
+                <a
+                  href="https://www.sitepoint.com/feed/"
+                  target="_blank"
+                  className="w-8 h-8 relative rounded-full"
+                >
                   <img
                     src={RssIcon}
                     alt="x-icon"
                     className="w-auto h-auto object-contain"
                   />
                 </a>
-                <a href="#" className="w-8 h-8 relative rounded-full">
+                <a
+                  href="https://www.facebook.com/sitepoint"
+                  target="_blank"
+                  className="w-8 h-8 relative rounded-full"
+                >
                   <img
                     src={Facebook}
                     alt="x-icon"
