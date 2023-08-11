@@ -81,6 +81,7 @@ const KnowledgeSection = () => {
               email: "",
               otherCompany: "",
               typeOfEntity: selectedLabel,
+              name_of_business: "",
               licensesInterested: selectedLicensesLabel,
             }}
             // enableReinitialize
@@ -99,6 +100,9 @@ const KnowledgeSection = () => {
               if (!values.otherCompany) {
                 errors.otherCompany = "Required"
               }
+              if (!values.name_of_business) {
+                errors.name_of_business = "Required"
+              }
 
               if (!values.email) {
                 errors.email = "Required"
@@ -110,25 +114,33 @@ const KnowledgeSection = () => {
               return errors
             }}
             onSubmit={async (values, { setSubmitting }) => {
-              const person = await createPerson({
-                name: values.name,
-                email: values.email,
+              const org = await createOrganization({
+                name: values.name_of_business,
               })
-              if (person?.data?.id) {
-                const deal = await createDeal({
-                  title: values.company + " deal",
-                  "413baf5a43f00f7e8a8bcbf7ba9d99add75a6e4b":
-                    values.otherCompany,
-                  "9e4cd248a2088bd2a0e72054ea8e8028d87287f6":
-                    values.typeOfEntity,
-                  e511dbc5e324d1ee22786d507a7171b44892ee61:
-                    values.licensesInterested,
-                  person_id: person?.data?.id,
+
+              if (org?.data?.id) {
+                const person = await createPerson({
+                  name: values.name,
+                  email: values.email,
+                  org_id: org?.data?.id,
                 })
-                if (deal.data?.id) {
-                  setSelectedLabel([])
-                  setSelectedLicensesLabel([])
-                  setFormSubmit(true)
+                if (person?.data?.id) {
+                  const deal = await createDeal({
+                    title: values.name_of_business + " deal",
+                    "413baf5a43f00f7e8a8bcbf7ba9d99add75a6e4b":
+                      values.otherCompany,
+                    "9e4cd248a2088bd2a0e72054ea8e8028d87287f6":
+                      values.typeOfEntity,
+                    e511dbc5e324d1ee22786d507a7171b44892ee61:
+                      values.licensesInterested,
+                    person_id: person?.data?.id,
+                    org_id: org?.data?.id,
+                  })
+                  if (deal.data?.id) {
+                    setSelectedLabel([])
+                    setSelectedLicensesLabel([])
+                    setFormSubmit(true)
+                  }
                 }
               }
             }}
@@ -222,6 +234,26 @@ const KnowledgeSection = () => {
                       errors.typeOfEntity}
                   </p>
                 </div>
+
+                <div className="flex flex-col w-full gap-1 ">
+                  <label className="caption-text text-gray_400 ">
+                    Name of business/institution *
+                  </label>
+                  <input
+                    className="input body-small-text "
+                    type="text"
+                    name="name_of_business"
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    value={values.name_of_business}
+                  />
+                  <p className="caption-text text-[red] m-0">
+                    {errors.name_of_business &&
+                      touched.name_of_business &&
+                      errors.name_of_business}
+                  </p>
+                </div>
+
                 <div className="w-full">
                   <div className="mb-3">
                     <p className=" caption-text text-gray_400 m-0">
