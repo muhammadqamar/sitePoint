@@ -127,7 +127,7 @@ const KnowledgeSection = () => {
                 if (person?.data?.id) {
                   const deal = await createDeal({
                     title: values.name_of_business + " deal",
-                    "413baf5a43f00f7e8a8bcbf7ba9d99add75a6e4b":
+                    "cadbaec326f420e0c168e263626acb5cd1e28e9e":
                       values.otherCompany,
                     "9e4cd248a2088bd2a0e72054ea8e8028d87287f6":
                       values.typeOfEntity,

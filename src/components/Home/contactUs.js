@@ -108,7 +108,7 @@ const ContactUs = () => {
                 if (person?.data?.id) {
                   const deal = await createDeal({
                     title: values.company + " deal",
-                    "413baf5a43f00f7e8a8bcbf7ba9d99add75a6e4b":
+                    "cadbaec326f420e0c168e263626acb5cd1e28e9e":
                       values.otherCompany,
                     cd4eb20830f842fc341411c47a3bd4b017cefb82: [
                       parseInt(values.companyBudget),
