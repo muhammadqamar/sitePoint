@@ -7,6 +7,143 @@ import LatestSkill from "../../utils/LatestSkills"
 import CourseCard from "../../utils/CourseCard"
 
 import SitepointFeatureImg from "../../assets/images/sitepoint-feature.png"
+import Logo1_1 from "../../assets/images/logo/js.svg"
+import Logo1_2 from "../../assets/images/logo/react.svg"
+import Logo1_3 from "../../assets/images/logo/node-js.svg"
+import Logo2_1 from "../../assets/images/logo/html.svg"
+import Logo2_2 from "../../assets/images/logo/css.svg"
+import Logo3_1 from "../../assets/images/logo/vs-code.svg"
+import Logo3_2 from "../../assets/images/logo/swap-call.svg"
+import Logo3_3 from "../../assets/images/logo/dev-board.svg"
+import Logo4_1 from "../../assets/images/logo/code-fill.svg"
+import Logo5_1 from "../../assets/images/logo/vue.svg"
+import Logo6_1 from "../../assets/images/logo/calculater.svg"
+import Logo6_2 from "../../assets/images/logo/function.svg"
+import Logo7_1 from "../../assets/images/logo/python.svg"
+import Logo8_1 from "../../assets/images/logo/analytics.svg"
+
+const learningPath = [
+  {
+    skillLogo: [
+      {
+        logo: Logo1_1,
+      },
+      {
+        logo: Logo1_2,
+      },
+      {
+        logo: Logo1_3,
+      },
+    ],
+    heading: "Full Stack JavaScript Developer",
+    lable: "Learning Path",
+  },
+  {
+    skillLogo: [
+      {
+        logo: Logo2_1,
+      },
+      {
+        logo: Logo2_2,
+      },
+      {
+        logo: Logo1_1,
+      },
+    ],
+    heading: "Web Development Basics",
+    lable: "Learning Path",
+  },
+  {
+    skillLogo: [
+      {
+        logo: Logo3_1,
+      },
+      {
+        logo: Logo3_2,
+      },
+      {
+        logo: Logo3_3,
+      },
+    ],
+    heading: "Pro Dev Workflow",
+    lable: "Learning Path",
+  },
+  {
+    skillLogo: [
+      {
+        logo: Logo2_1,
+      },
+      {
+        logo: Logo2_2,
+      },
+      {
+        logo: Logo4_1,
+      },
+    ],
+    heading: "Build Beautiful Webpages",
+    lable: "Learning Path",
+  },
+  {
+    skillLogo: [
+      {
+        logo: Logo1_2,
+      },
+    ],
+    heading: "React Front End Development",
+    lable: "Learning Path",
+  },
+  {
+    skillLogo: [
+      {
+        logo: Logo5_1,
+      },
+    ],
+    heading: "Vue Front End Developement",
+    lable: "Learning Path",
+  },
+  {
+    skillLogo: [
+      {
+        logo: Logo1_1,
+      },
+    ],
+    heading: "Advanced JavaScript",
+    lable: "Learning Path",
+  },
+  {
+    skillLogo: [
+      {
+        logo: Logo6_1,
+      },
+      {
+        logo: Logo6_2,
+      },
+    ],
+    heading: "Computer Science Crash Coruse",
+    lable: "Learning Path",
+  },
+  {
+    skillLogo: [
+      {
+        logo: Logo7_1,
+      },
+    ],
+    heading: "Become a Python Master",
+    lable: "Learning Path",
+  },
+  {
+    skillLogo: [
+      {
+        logo: Logo7_1,
+      },
+      {
+        logo: Logo8_1,
+      },
+    ],
+    heading: "Become a Python Data Scientist",
+    lable: "Learning Path",
+  },
+]
 
 const Home = () => {
   return (
@@ -87,41 +224,14 @@ const Home = () => {
           <div className="w-full xs:my-10 xsm:my-16 md:my-20 lg:my-32">
             <h2 className="h2-text mb-14">A path for everyone</h2>
             <div className="w-full sm:w-[inherit] lg:w-full flex items-center gap-5  flex-wrap overflow-hidden">
-              <CourseCard
-                Icon
-                subheading="Full Stack JavaScript Developer"
-                text="Learning Path"
-              />
-              <CourseCard
-                Icon
-                subheading="Full Stack JavaScript Developer"
-                text="Learning Path"
-              />
-              <CourseCard
-                Icon
-                subheading="Full Stack JavaScript Developer"
-                text="Learning Path"
-              />
-              <CourseCard
-                Icon
-                subheading="Full Stack JavaScript Developer"
-                text="Learning Path"
-              />
-              <CourseCard
-                Icon
-                subheading="Full Stack JavaScript Developer"
-                text="Learning Path"
-              />
-              <CourseCard
-                Icon
-                subheading="Full Stack JavaScript Developer"
-                text="Learning Path"
-              />
-              <CourseCard
-                Icon
-                subheading="Full Stack JavaScript Developer"
-                text="Learning Path"
-              />
+              {learningPath.map((item, index) => (
+                <CourseCard
+                  key={index}
+                  learningLogo={item.skillLogo}
+                  subheading={item.heading}
+                  text={item.lable}
+                />
+              ))}
             </div>
           </div>
           <div id="knowledge">
