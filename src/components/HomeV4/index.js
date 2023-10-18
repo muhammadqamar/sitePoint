@@ -2,6 +2,7 @@ import React from "react"
 import LanguageCard from "../common/LanguageCard"
 import CoursesCard from "../common/CoursesCard"
 import LearningCard from "../common/LearningCard"
+import WritingTabs from "../common/writingTabs"
 import ArmyCard from "../common/ArmyCard"
 
 import Button from "../../utils/Button"
@@ -16,7 +17,7 @@ const Index = () => {
           ))}
         </div>
 
-        {/* courses */}
+        {/* Courses */}
         <div className="w-full mb-[164px]">
           <h1 className="text-[38px] font-bold leading-[44px] track-[-0.72px] text-center mb-16">
             Explore over 700+ Courses
@@ -31,7 +32,7 @@ const Index = () => {
             className=" mx-auto !text-gray-900 hover:!text-white !font-bold rounded-xl border border-solid border-gray-900 hover:border-purple_300"
           />
         </div>
-        {/* learning */}
+        {/* Learning */}
         <div className="w-full mb-[164px]">
           <h1 className="text-[38px] font-bold leading-[44px] track-[-0.72px] text-gray-900 text-center mb-4">
             For all learning paths
@@ -51,7 +52,23 @@ const Index = () => {
           />
         </div>
 
-        {/* developers */}
+        {/* Writing */}
+        <div className="w-full mb-[164px]">
+          <h1 className="text-[38px] font-bold leading-[44px] track-[-0.72px] text-gray-900 text-center mb-[64px]">
+            What we’re writing about these days
+          </h1>
+
+          <div className="w-full flex items-center gap-1 mb-[64px]">
+            <WritingTabs />
+          </div>
+
+          <div className="w-full grid grid-cols-4 gap-5 mb-[164px]">
+            {[1, 2, 3, 4].map(item => (
+              <LearningCard />
+            ))}
+          </div>
+        </div>
+        {/* Developers */}
         <div className="w-full mb-[164px]">
           <h1 className="text-[38px] font-bold leading-[44px] track-[-0.72px] text-gray-900 text-center mb-4">
             An army of developers ready to assist
