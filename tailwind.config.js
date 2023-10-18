@@ -78,6 +78,7 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
     "./src/pages/**/*.{js,jsx,ts,tsx}",
     "./src/components/**/*.{js,jsx,ts,tsx}",
+    "./src/utils/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
     colors: {
