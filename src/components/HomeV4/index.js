@@ -4,15 +4,170 @@ import { Formik } from "formik"
 
 import LanguageCard from "../common/LanguageCard"
 import CoursesCard from "../common/CoursesCard"
+import LearningCard from "../common/LearningCard"
+import WritingTabs from "../common/writingTabs"
+import ArmyCard from "../common/ArmyCard"
+
 import Button from "../../utils/Button"
 
 import Javascript from "../../assets/images/javaScript.png"
+import PHPImage from "../../assets/images/php.png"
+import HTMLImage from "../../assets/images/html.png"
+import PythonImage from "../../assets/images/python.png"
+import RubyImage from "../../assets/images/ruby.png"
+import WordpressImage from "../../assets/images/wordPress.png"
+import BlockchainImage from "../../assets/images/blockChain.png"
+import CloudImage from "../../assets/images/cloud.png"
+
+import CSSLOgo from "../../assets/images/cssLogo.png"
+import Typescript from "../../assets/images/typeScript.png"
+import JavaScript from "../../assets/images/exploreJavaScript.png"
+import CSSFirebox from "../../assets/images/cssFirebox.png"
+import PhPExplore from "../../assets/images/phpExplore.png"
+import CSSArchitecture from "../../assets/images/cssArchitecture.png"
+import ReactImg from "../../assets/images/react.png"
+import FigmaImg from "../../assets/images/figma.png"
+import FullStack from "../../assets/images/fullStackDeveloper.png"
+import ReactLogo from "../../assets/images/reactLogo.png"
+import JavascriptGreen from "../../assets/images/javaScriptGreen.png"
+import WebDevelopmentBasics from "../../assets/images/fullStackDeveloper.png"
+import BuildPages from "../../assets/images/buildBeautifulWebpages.png"
+import PythonMaster from "../../assets/images/becomePythonMaster.png"
+
+import RatingsImg from "../../assets/images/logo/ratings.svg"
 
 const courses = [
   {
     image: Javascript,
     course: "JavaScript",
     courseQuantity: "218 courses",
+  },
+  {
+    image: PHPImage,
+    course: "PHP",
+    courseQuantity: "167 courses",
+  },
+  {
+    image: HTMLImage,
+    course: "HTML & CSS",
+    courseQuantity: "415 courses",
+  },
+  {
+    image: PythonImage,
+    course: "Python",
+    courseQuantity: "112 courses",
+  },
+  {
+    image: RubyImage,
+    course: "Ruby",
+    courseQuantity: "88 courses",
+  },
+  {
+    image: WordpressImage,
+    course: "WordPress",
+    courseQuantity: "394 courses",
+  },
+  {
+    image: BlockchainImage,
+    course: "Blockchain",
+    courseQuantity: "29 courses",
+  },
+  {
+    image: CloudImage,
+    course: "Cloud & DevOps",
+    courseQuantity: "37 courses",
+  },
+]
+const exploreCourses = [
+  {
+    courseImage: CSSLOgo,
+    ratings: RatingsImg,
+    rating: "4.8",
+    reviews: "(48 reviews)",
+    courseTitle: "CSS Troubleshooting in Six Easy Steps",
+  },
+  {
+    courseImage: Typescript,
+    ratings: RatingsImg,
+    rating: "4.8",
+    reviews: "(4 reviews)",
+    courseTitle: "Advanced React with TypeScript",
+  },
+  {
+    courseImage: JavaScript,
+    ratings: RatingsImg,
+    rating: "4.7",
+    reviews: "(15 reviews)",
+    courseTitle: "JavaScript Fundamentals",
+  },
+  {
+    courseImage: CSSFirebox,
+    ratings: RatingsImg,
+    rating: "4.6",
+    reviews: "42 reviews)",
+    courseTitle: "Master CSS Layouts with Flexbox",
+  },
+  {
+    courseImage: PhPExplore,
+    ratings: RatingsImg,
+    rating: "4.5",
+    reviews: "(82 reviews)",
+    courseTitle: "PHP and MySQL Programming Principles",
+  },
+  {
+    courseImage: CSSArchitecture,
+    ratings: RatingsImg,
+    rating: "4.4",
+    reviews: "(38 reviews)",
+    courseTitle: "Become the CSS Hero of Your Office with CSS Architecture",
+  },
+  {
+    courseImage: ReactImg,
+    ratings: RatingsImg,
+    rating: "4.2",
+    reviews: "(6 reviews)",
+    courseTitle: "A Playful Intro to React",
+  },
+  {
+    courseImage: FigmaImg,
+    ratings: RatingsImg,
+    rating: "3.6",
+    reviews: "(102 reviews)",
+    courseTitle: "Learn Fundamental Design Principles for Non-Designers",
+  },
+]
+const learning = [
+  {
+    image: FullStack,
+    courseImage1: Javascript,
+    courseImage2: JavascriptGreen,
+    courseImage3: ReactLogo,
+    steps: 7,
+    title: "Full Stack JavaScript Developer",
+  },
+  {
+    image: WebDevelopmentBasics,
+    courseImage1: Javascript,
+    courseImage2: HTMLImage,
+    courseImage3: CSSLOgo,
+    steps: 7,
+    title: "Web Development Basics",
+  },
+  {
+    image: BuildPages,
+    courseImage1: HTMLImage,
+    courseImage2: CSSLOgo,
+    courseImage3: FigmaImg,
+    steps: 7,
+    title: "Build Beautiful Webpages",
+  },
+  {
+    image: PythonMaster,
+    courseImage1: PythonImage,
+    courseImage2: "",
+    courseImage3: "",
+    steps: 7,
+    title: "Full Stack JavaScript Developer",
   },
 ]
 
@@ -33,7 +188,7 @@ const Index = () => {
             <Button
               text="Start Free Trial"
               onClick={() => {}}
-              className="bg-[#7232FA] hover:bg-white hover:text-[#292A32] hover:border border-solid border-[#292A32] rounded-xl"
+              className="bg-[#7232FA] hover:bg-white hover:text-[#292A32] border border-solid border-[#7232FA] hover:border-[#292A32] rounded-xl"
               icon=""
               type=""
               disabled
@@ -48,20 +203,17 @@ const Index = () => {
             />
           </div>
         </div>
+        {/* Courses */}
         <div className="w-full grid grid-cols-4 gap-5 mb-[164px]">
-          {courses.map((item, index) => (
+          {courses?.map((item, index) => (
             <div
-              className="w-auto h-auto px-4 py-5 flex items-center gap-3 rounded-lg border border-solid border-gray-201"
+              className="w-[280px] h-auto px-4 py-4 flex items-center gap-3 rounded-lg border border-solid border-gray-201"
               key={index}
             >
-              <StaticImage
+              <img
                 src={item.image}
-                alt="A dinosaur"
-                placeholder="blurred"
-                layout="fixed"
-                width={36}
-                height={36}
-                className="rounded-full flex items-center justify-center"
+                alt=""
+                className="object-fit rounded-full h-9"
               />
               <div className="">
                 <h4 className="small-text !font-bold m-0 text-gray-900">
@@ -74,13 +226,101 @@ const Index = () => {
             </div>
           ))}
         </div>
-        <h1 className="text-[38px] font-bold leading-[44px] track-[-0.72px] text-center mb-16">
-          Explore over 700+ Courses
-        </h1>
-        <div className="w-full grid grid-cols-4 gap-5 mb-[164px]">
-          {[1, 2, 3, 4, 5, 6, 7, 8].map(item => (
-            <CoursesCard />
-          ))}
+        {/*Explore Courses */}
+        <div className="w-full mb-[164px]">
+          <h1 className="text-[38px] font-bold leading-[44px] track-[-0.72px] text-center mb-16">
+            Explore over 700+ Courses
+          </h1>
+          <div className="w-full grid grid-cols-4 gap-5 mb-16">
+            {exploreCourses?.map((item, index) => (
+              <div
+                className="w-auto h-auto  pb-5 flex flex-col items-center gap-4 rounded-lg "
+                key={index}
+              >
+                <img
+                  src={item.courseImage}
+                  alt="Course_Img"
+                  className="rounded-lg h-[200px]"
+                />
+                <div className="w-full px-4 flex gap-2 items-center">
+                  <img
+                    src={item.ratings}
+                    alt="Rating_img"
+                    className="h-[24px] "
+                  />
+                  <span className="body-small-text tracking-normal text-gray-900 m-0">
+                    {item.rating}
+                  </span>
+                  <span className="body-small-text tracking-normal text-gray-701 m-0">
+                    {item.reviews}
+                  </span>
+                </div>
+                <h4 className="w-full px-4  small-text !font-bold  text-gray-900 m-0">
+                  {item.courseTitle}
+                </h4>
+              </div>
+            ))}
+            <Button
+              text="Browse Premium Library"
+              className=" mx-auto !text-gray-900 hover:!text-white !font-bold rounded-xl border border-solid border-gray-900 hover:border-purple_300"
+            />
+          </div>
+        </div>
+        {/* Learning */}
+        <div className="w-full mb-[164px]">
+          <h1 className="text-[38px] font-bold leading-[44px] track-[-0.72px] text-gray-900 text-center mb-4">
+            For all learning paths
+          </h1>
+          <p className="small-text text-center text-gray-900 mb-16">
+            Whether you’re a full-stack developer, designer, or looking to get
+            into AI, we’ve got a path for you.
+          </p>
+          <div className="w-full grid grid-cols-4 gap-5 mb-16">
+            {learning?.map((item, index) => (
+              <div
+                className="w-auto h-auto   flex flex-col items-center gap-4 rounded-lg "
+                key={index}
+              >
+                <img
+                  src={item.image}
+                  alt="Corse_Img"
+                  className="rounded-lg h-[320px]"
+                />
+                <div className="w-full flex gap-2 items-center">
+                  <div className="flex items-center gap-1">
+                    <img
+                      src={item.courseImage1}
+                      alt="Corse_Img"
+                      className="h-[24px] rounded-full w-[24px]"
+                    />
+                    {index !== 3 ? (
+                      <>
+                        <img
+                          src={item.courseImage2}
+                          alt="Corse_Img"
+                          className="h-[24px] rounded-full w-[24px]"
+                        />
+                        <img
+                          src={item.courseImage3}
+                          alt="Corse_Img"
+                          className="h-[24px] rounded-full w-[24px]"
+                        />
+                      </>
+                    ) : null}
+                  </div>
+                  <span className="body-small-text tracking-normal text-gray-900 m-0">
+                    Beginner
+                  </span>
+                  <span className="body-small-text tracking-normal text-gray-701 m-0">
+                    {item.steps} steps
+                  </span>
+                </div>
+                <h4 className="w-full   small-text !font-bold  text-gray-900 m-0">
+                  {item.title}
+                </h4>
+              </div>
+            ))}
+          </div>
         </div>
         {/* Inspired Content */}
         <div className="mb-[164px] flex flex-col items-center gap-16">
@@ -118,6 +358,29 @@ const Index = () => {
               layout="fixed"
               className="rounded-lg"
             />
+          </div>
+        </div>
+        {/* Developers */}
+        <div className="w-full mb-[164px]">
+          <h1 className="text-[38px] font-bold leading-[44px] track-[-0.72px] text-gray-900 text-center mb-4">
+            An army of developers ready to assist
+          </h1>
+          <p className="small-text text-center text-gray-900 mb-16">
+            Create a free account and join our community today!
+          </p>
+        </div>
+        {/* Writing */}
+        <div className="w-full mb-[164px]">
+          <h1 className="text-[38px] font-bold leading-[44px] track-[-0.72px] text-gray-900 text-center mb-[64px]">
+            What we’re writing about these days
+          </h1>
+          <div className="w-full flex items-center gap-1 mb-[64px]">
+            <WritingTabs />
+          </div>
+          <div className="w-full grid grid-cols-4 gap-5 mb-[164px]">
+            {[1, 2, 3, 4].map(item => (
+              <LearningCard />
+            ))}
           </div>
         </div>
         {/* Join Newsletter */}
