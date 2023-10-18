@@ -4,6 +4,8 @@ import CoursesCard from "../common/CoursesCard"
 import LearningCard from "../common/LearningCard"
 import WritingTabs from "../common/writingTabs"
 import ArmyCard from "../common/ArmyCard"
+import bgJava from "../../assets/images/learning.png"
+import Java from "../../assets/images/logo/javaScript.svg"
 
 import Button from "../../utils/Button"
 
@@ -42,9 +44,34 @@ const Index = () => {
             into AI, we’ve got a path for you.
           </p>
           <div className="w-full grid grid-cols-4 gap-5 mb-16">
-            {[1, 2, 3, 4].map(item => (
-              <LearningCard />
-            ))}
+            <LearningCard
+              image={bgJava}
+              logo={Java}
+              name="Beginner"
+              step="7 steps"
+              subheading="Full Stack JavaScript Developer"
+            />
+            <LearningCard
+              image={bgJava}
+              logo={Java}
+              name="Beginner"
+              step="2 steps"
+              subheading="Web Development Basics"
+            />
+            <LearningCard
+              image={bgJava}
+              logo={Java}
+              name="Beginner"
+              step="3 steps"
+              subheading="Build Beautiful Webpages"
+            />
+            <LearningCard
+              image={bgJava}
+              logo={Java}
+              name="Beginner"
+              step="7 steps"
+              subheading="Become a Python master"
+            />
           </div>
           <Button
             text="Explore all courses"
@@ -61,15 +88,40 @@ const Index = () => {
           <div className="w-full flex items-center gap-1 mb-[64px]">
             <WritingTabs />
           </div>
-
+          {/* Learning Cards */}
           <div className="w-full grid grid-cols-4 gap-5 mb-[164px]">
-            {[1, 2, 3, 4].map(item => (
-              <LearningCard />
-            ))}
+            <LearningCard
+              image={bgJava}
+              logo={Java}
+              name="Shefali Shetty"
+              date="Sep 1, 2023"
+              subheading="Crafting Targeted Email Campaigns with Mailchimp and Drupal"
+            />
+            <LearningCard
+              image={bgJava}
+              logo={Java}
+              name="Mark Jacob"
+              date="Aug 31, 2023"
+              subheading="How to Create a Chrome Extension in 10 Minutes Flat"
+            />
+            <LearningCard
+              image={bgJava}
+              logo={Java}
+              name="Andrew Millan"
+              date="Aug 30, 2023"
+              subheading="Accelerating the Cloud: What to Expect When Going Cloud Native"
+            />
+            <LearningCard
+              image={bgJava}
+              logo={Java}
+              name="Sarah Jemeson"
+              date="Aug 29, 2023"
+              subheading="Which Programming Language Should I Learn First in 2023?"
+            />
           </div>
         </div>
         {/* Developers */}
-        <div className="w-full mb-[164px]">
+        <div className="w-full">
           <h1 className="text-[38px] font-bold leading-[44px] track-[-0.72px] text-gray-900 text-center mb-4">
             An army of developers ready to assist
           </h1>

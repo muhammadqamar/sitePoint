@@ -33,6 +33,10 @@ p {
   @apply flex items-center justify-center xs:py-2 xsm:py-4 xs:px-4 xsm:px-6 rounded-[56px] text-base font-semibold text-white hover:bg-purple_300;
 }
 
+.sitepoint-new-marketing .buttontrial {
+  @apply flex items-center justify-center py-3 px-4 rounded-[56px] text-base font-semibold text-white hover:bg-purple_300;
+}
+
 .sitepoint-new-marketing .labels {
   @apply w-fit inline-flex py-2 px-[10px] rounded-full items-center justify-center bg-white_200 hover:bg-white_300 cursor-pointer;
 }
