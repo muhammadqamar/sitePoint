@@ -3,7 +3,7 @@ import React from "react"
 
 const Index = () => {
   return (
-    <div className="w-auto h-auto  pb-5 flex flex-col items-center gap-4 rounded-lg border border-solid border-gray-201">
+    <div className="w-auto h-auto  pb-5 flex flex-col items-center gap-4 rounded-lg ">
       <StaticImage
         src="../../../assets/images/css-bg.png"
         alt="A dinosaur"
