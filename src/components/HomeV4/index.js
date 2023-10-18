@@ -3,6 +3,10 @@ import { StaticImage } from "gatsby-plugin-image"
 import { Formik } from "formik"
 import LanguageCard from "../common/LanguageCard"
 import CoursesCard from "../common/CoursesCard"
+import LearningCard from "../common/LearningCard"
+import ArmyCard from "../common/ArmyCard"
+
+import Button from "../../utils/Button"
 
 const Index = () => {
   return (
@@ -23,13 +27,59 @@ const Index = () => {
             <LanguageCard />
           ))}
         </div>
-        <h1 className="text-[38px] font-bold leading-[44px] track-[-0.72px] text-center mb-16">
-          Explore over 700+ Courses
-        </h1>
-        <div className="w-full grid grid-cols-4 gap-5 mb-[164px]">
-          {[1, 2, 3, 4, 5, 6, 7, 8].map(item => (
-            <CoursesCard />
-          ))}
+
+        {/* courses */}
+        <div className="w-full mb-[164px]">
+          <h1 className="text-[38px] font-bold leading-[44px] track-[-0.72px] text-center mb-16">
+            Explore over 700+ Courses
+          </h1>
+          <div className="w-full grid grid-cols-4 gap-5 mb-16">
+            {[1, 2, 3, 4, 5, 6, 7, 8].map(item => (
+              <CoursesCard />
+            ))}
+          </div>
+          <Button
+            text="Browse Premium Library"
+            className=" mx-auto !text-gray-900 hover:!text-white !font-bold rounded-xl border border-solid border-gray-900 hover:border-purple_300"
+          />
+        </div>
+        {/* learning */}
+        <div className="w-full mb-[164px]">
+          <h1 className="text-[38px] font-bold leading-[44px] track-[-0.72px] text-gray-900 text-center mb-4">
+            For all learning paths
+          </h1>
+          <p className="small-text text-center text-gray-900 mb-16">
+            Whether you’re a full-stack developer, designer, or looking to get
+            into AI, we’ve got a path for you.
+          </p>
+          <div className="w-full grid grid-cols-4 gap-5 mb-16">
+            {[1, 2, 3, 4].map(item => (
+              <LearningCard />
+            ))}
+          </div>
+          <Button
+            text="Explore all courses"
+            className=" mx-auto !text-gray-900 hover:!text-white !font-bold rounded-xl border border-solid border-gray-900 hover:border-purple_300"
+          />
+        </div>
+
+        {/* developers */}
+        <div className="w-full mb-[164px]">
+          <h1 className="text-[38px] font-bold leading-[44px] track-[-0.72px] text-gray-900 text-center mb-4">
+            An army of developers ready to assist
+          </h1>
+          <p className="small-text text-center text-gray-900 mb-16">
+            Create a free account and join our community today!
+          </p>
+          <div className="w-full grid grid-cols-4 gap-5 mb-16">
+            {[1, 2, 3, 4].map(item => (
+              <ArmyCard />
+            ))}
+          </div>
+          <Button
+            text="Go to community"
+            className=" mx-auto !text-gray-900 hover:!text-white !font-bold rounded-xl border border-solid border-gray-900 hover:border-purple_300"
+          />
         </div>
         {/* Inspired Content */}
         <div className="py-[164px] flex flex-col items-center gap-16">
