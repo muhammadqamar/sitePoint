@@ -336,7 +336,44 @@ const Index = () => {
             />
           </div>
         </div>
-
+        {/* Inspired Content */}
+        <div className="mb-[164px] flex flex-col items-center gap-16">
+          <h2 className="text-[36px] font-bold leading-[44px] tracking-[-0.72px] text-[#292A32]">
+            Content that’s inspired the Internet
+          </h2>
+          <div className="flex gap-5">
+            <div className="xl:max-w-[880px] w-full p-8 rounded-lg border border-solid border-[#DADAE0]">
+              <p className="max-w-[628px] text-[24px] font-normal leading-[36px] tracking-normal text-[#292A32] mb-10">
+                “... I joined SitePoint to learn more about web stuff and their
+                PHP/MySQL tutorial was probably the first I used.”
+              </p>
+              <div className="flex items-center gap-3">
+                <StaticImage
+                  src="../../assets/images/matt.png"
+                  alt="Matt image"
+                  placeholder="blurred"
+                  layout="fixed"
+                  className="rounded-full"
+                />
+                <div>
+                  <h4 className="text-[16px] font-bold leading-[24px] tracking-normal text-[#292A32]">
+                    Matt Mullenweg
+                  </h4>
+                  <p className="text-[14px] font-normal leading-[20px] tracking-normal text-[#555667]">
+                    Creator of WordPress, CEO of Automattic
+                  </p>
+                </div>
+              </div>
+            </div>
+            <StaticImage
+              src="../../assets/images/automatic.png"
+              alt="Automattic image"
+              placeholder="blurred"
+              layout="fixed"
+              className="rounded-lg"
+            />
+          </div>
+        </div>
         {/* Developers */}
         <div className="w-full mb-[164px]">
           <h1 className="text-[38px] font-bold leading-[44px] track-[-0.72px] text-gray-900 text-center mb-4">
