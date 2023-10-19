@@ -44,18 +44,16 @@ const Footer = () => {
   ) : (
     <footer
       className={`w-full px-[20px] md:px-[clamp(20px,12vw,122px)] ${
-        location === "/home-v4/"
-          ? "xs:py-8 xsm:py-12 md:py-[164px]"
-          : "xs:py-8 xsm:py-12 md:py-[120px]"
+        location === "/home-v4/" ? "py-16 md:py-[164px]" : "py-12 md:py-[120px]"
       } ${location === "/home-v4/" ? "bg-white" : "bg-black"}`}
     >
-      <div className="max-w-[1084px] mx-auto">
+      <div className="max-w-[1180px] mx-auto">
         <div className="w-full flex-col justify-start items-start inline-flex pb-16">
           {location === "/home-v4/" && (
             <footer className="w-full m-auto pb-16">
               <div
                 data-aos-anchor-placement="top-bottom"
-                className="w-full flex items-center justify-between"
+                className="w-full flex flex-wrap gap-8 items-center justify-between"
               >
                 <Link to="https://sitepoint.com" target="_blank">
                   <img
@@ -67,14 +65,20 @@ const Footer = () => {
                 <Link
                   to="https://www.sitepoint.com/premium/pricing/?ref_source=sitepoint&ref_medium=topnav"
                   target="_blank"
-                  className="buttontrial bg-primary-700 w-auto xs:whitespace-pre xsm:whitespace-normal"
+                  className="buttontrial bg-primary-700 w-auto whitespace-pre xsm:whitespace-normal"
                 >
                   Start Free Trial
                 </Link>
               </div>
             </footer>
           )}
-          <div className="justify-start items-start gap-5 inline-flex flex-wrap">
+          <div
+            className={`items-start gap-5 inline-flex flex-wrap ${
+              location === "/home-v4/"
+                ? "w-full justify-between"
+                : "justify-start"
+            }`}
+          >
             <div className="w-64 flex-col justify-center items-start gap-8 inline-flex">
               <h4
                 className={`subheading-text text-center ${

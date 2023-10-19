@@ -13,7 +13,7 @@ const Index = props => {
           <img
             src={item.image}
             alt="A dinosaur"
-            className="rounded-lg w-full flex items-center justify-center sm:h-[320px] h-full"
+            className="rounded-lg w-full flex items-center justify-center h-[320px]"
           />
           <div className="w-full  flex gap-2 items-center">
             <div className="flex items-center gap-1">

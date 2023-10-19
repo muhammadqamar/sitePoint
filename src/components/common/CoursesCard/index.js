@@ -15,7 +15,7 @@ const Index = () => {
             alt="CourseCard_Image"
             className="rounded-lg w-full flex items-center justify-center sm:h-[200px] h-auto"
           />
-          <div className="w-full px-4 flex gap-2 items-center">
+          <div className="w-full px-4 flex flex-wrap gap-2 items-center">
             <img
               src={item.starlogo}
               alt="Star_Logo"

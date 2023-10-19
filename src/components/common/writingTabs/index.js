@@ -54,7 +54,7 @@ const Index = props => {
           ))}
         </>
       ) : (
-        <div className="w-full grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5 mb-[164px]">
+        <div className="w-full grid xl:grid-cols-4 lg:grid-cols-3 xs:grid-cols-2 grid-cols-1 gap-5">
           {Writing.map((item, i) => (
             <div
               key={i}

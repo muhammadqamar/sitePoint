@@ -81,18 +81,10 @@ const Header = () => {
             >
               Blog
             </Link>
-
-            {/* <Link
-                to="https://www.sitepoint.com/premium/sign-in/"
-                target="_blank"
-                className="text-center text-gray-900 small-text !font-semibold "
-              >
-                Login
-              </Link> */}
           </div>
 
           <div className="justify-center items-center gap-6 flex">
-            <Link to="" target="_blank" className="flex items-center">
+            <Link to="" target="_blank" className="hidden sm:flex items-center">
               <StaticImage
                 src="../../assets/images/icons/black-search.svg"
                 width={24}
@@ -100,7 +92,7 @@ const Header = () => {
                 alt="Search"
               />
             </Link>
-            <Link to="" target="_blank" className="flex items-center">
+            <Link to="" target="_blank" className="hidden sm:flex items-center">
               <StaticImage
                 src="../../assets/images/icons/black-user.svg"
                 width={24}
@@ -111,7 +103,7 @@ const Header = () => {
             <Link
               to="https://www.sitepoint.com/premium/pricing/?ref_source=sitepoint&ref_medium=topnav"
               target="_blank"
-              className="buttontrial bg-primary-700 w-full xs:whitespace-pre xsm:whitespace-normal"
+              className="buttontrial bg-primary-700 w-full whitespace-pre xsm:whitespace-normal"
             >
               Start Free Trial
             </Link>
@@ -168,7 +160,7 @@ const Header = () => {
             <Link
               to="https://www.sitepoint.com/premium/pricing/?ref_source=sitepoint&ref_medium=topnav"
               target="_blank"
-              className="button bg-primary-700 w-full xs:whitespace-pre xsm:whitespace-normal"
+              className="button bg-primary-700 w-full whitespace-pre xsm:whitespace-normal"
             >
               Join Premium
             </Link>

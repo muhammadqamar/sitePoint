@@ -17,18 +17,18 @@ const Index = () => {
       <div className="">
         {/* Hero */}
         <div className="max-w-[1440px] mx-auto md:px-[130px] px-5 flex flex-col items-center mb-20 md:mb-[120px] xl:mb-[164px]">
-          <h1 className="md:text-[90px] text-[50px] font-bold leading-[92px] tracking-[-1.4px] text-[#292A32] mb-6 md:text-center text-start">
+          <h1 className="md:text-[90px] text-[50px] font-bold md:leading-[92px] leading-[50px] tracking-[-1.4px] text-[#292A32] mb-6 md:text-center text-start">
             We develop developers
           </h1>
           <p className="text-[18px] font-normal leading-[28px] tracking-normal text-[#444553] mb-10">
             Access a library of books and courses on Javascript, Phython, AI,
             and more with a community of over 500,000 developers.
           </p>
-          <div className="flex items-center gap-5">
+          <div className="flex items-center flex-wrap gap-5">
             <Button
               text="Start Free Trial"
               onClick={() => {}}
-              className="bg-[#7232FA] hover:bg-white hover:text-[#292A32] border border-solid border-[#7232FA] hover:border-[#292A32] rounded-xl"
+              className="bg-[#7232FA] w-[190px] hover:bg-white hover:text-[#292A32] border border-solid border-[#7232FA] hover:border-[#292A32] rounded-xl"
               icon=""
               type=""
               disabled
@@ -36,7 +36,7 @@ const Index = () => {
             <Button
               text="Browse the library"
               onClick={() => {}}
-              className="hover:bg-[#7232FA] bg-white !text-[#292A32] hover:!text-white border border-solid border-[#292A32] hover:border-[#7232FA] rounded-xl"
+              className="hover:bg-[#7232FA] !px-0 w-[190px] !font-bold bg-white !text-[#292A32] hover:!text-white border hover:border-none border-solid border-[#292A32] rounded-xl"
               icon=""
               type=""
               disabled
@@ -44,7 +44,7 @@ const Index = () => {
           </div>
         </div>
         {/* Courses */}
-        <div className="max-w-[1440px] mx-auto md:px-[130px] px-5 w-full grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-5 md:mb-[164px] mb-[80px]">
+        <div className="max-w-[1440px] mx-auto md:px-[130px] px-5 w-full grid lg:grid-cols-4 md:grid-cols-3 xs:grid-cols-2 grid-cols-1 gap-5 md:mb-[164px] mb-[80px]">
           <LanguageCard />
         </div>
         {/*Explore Courses */}
@@ -52,7 +52,7 @@ const Index = () => {
           <h1 className="text-[38px] font-bold leading-[44px] track-[-0.72px] text-center mb-16">
             Explore over 700+ Courses
           </h1>
-          <div className="w-full grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5 mb-16">
+          <div className="w-full grid xl:grid-cols-4 lg:grid-cols-3 xs:grid-cols-2 grid-cols-1 gap-5 mb-16">
             <CoursesCard />
           </div>
           <Button
@@ -69,7 +69,7 @@ const Index = () => {
             Whether you’re a full-stack developer, designer, or looking to get
             into AI, we’ve got a path for you.
           </p>
-          <div className="w-full grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5 mb-16">
+          <div className="w-full grid xl:grid-cols-4 lg:grid-cols-3 xs:grid-cols-2 grid-cols-1 gap-5 mb-16">
             <LearningCard />
           </div>
           <Button
@@ -78,11 +78,11 @@ const Index = () => {
           />
         </div>
         {/* Inspired Content */}
-        <div className="mb-20 md:mb-[120px] xl:mb-[164px] flex flex-col items-center gap-16">
+        <div className="mb-20 mx-auto md:px-[130px] px-5 md:mb-[164px] flex flex-col items-center gap-16">
           <h2 className="text-[36px] font-bold leading-[44px] tracking-[-0.72px] text-[#292A32]">
             Content that’s inspired the Internet
           </h2>
-          <div className="max-w-[1440px] mx-auto md:px-[130px] px-5 w-full flex gap-5">
+          <div className="max-w-[1440px] mx-auto w-full flex md:flex-nowrap flex-wrap gap-5">
             <div className="xl:max-w-[880px] w-full p-8 rounded-lg border border-solid border-[#DADAE0]">
               <p className="max-w-[628px] text-[24px] font-normal leading-[36px] tracking-normal text-[#292A32] mb-10">
                 “... I joined SitePoint to learn more about web stuff and their
@@ -110,8 +110,8 @@ const Index = () => {
               src="../../assets/images/automatic.png"
               alt="Automattic image"
               placeholder="blurred"
-              layout="fixed"
-              className="rounded-lg"
+              // layout=""
+              className="rounded-lg h-full w-full xl:w-[280px]"
             />
           </div>
           {/* Slider */}
@@ -127,7 +127,7 @@ const Index = () => {
           <p className="small-text text-center text-gray-900 mb-16">
             Create a free account and join our community today!
           </p>
-          <div className="w-full grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5 mb-16">
+          <div className="w-full grid xl:grid-cols-4 lg:grid-cols-3 xs:grid-cols-2 grid-cols-1 gap-5 mb-16">
             <ArmyCard />
           </div>
           <Button
