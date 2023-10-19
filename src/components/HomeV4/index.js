@@ -95,10 +95,10 @@ const courses = [
 const Index = () => {
   return (
     <div className="w-full pt-[228px]">
-      <div className="max-w-[1440px] mx-auto px-[130px]">
+      <div className="max-w-[1440px] mx-auto md:px-[130px] px-5">
         {/* Hero */}
-        <div className="flex flex-col items-center mb-[164px]">
-          <h1 className="text-[90px] font-bold leading-[92px] tracking-[-1.4px] text-[#292A32] mb-6">
+        <div className="flex flex-col items-center md:mb-[164px] mb-[80px]">
+          <h1 className="md:text-[90px] text-[50px] font-bold leading-[92px] tracking-[-1.4px] text-[#292A32] mb-6 md:text-center text-start">
             We develop developers
           </h1>
           <p className="text-[18px] font-normal leading-[28px] tracking-normal text-[#444553] mb-10">
@@ -125,7 +125,7 @@ const Index = () => {
           </div>
         </div>
         {/* Courses */}
-        <div className="w-full grid grid-cols-4 gap-5 mb-[164px]">
+        <div className="w-full grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-5 md:mb-[164px] mb-[80px]">
           {courses?.map((item, index) => (
             <div
               className="w-[280px] h-auto px-4 py-4 flex items-center gap-3 rounded-lg border border-solid border-gray-201"
@@ -148,11 +148,11 @@ const Index = () => {
           ))}
         </div>
         {/*Explore Courses */}
-        <div className="w-full mb-[164px]">
+        <div className="w-full md:mb-[164px] mb-[80px]">
           <h1 className="text-[38px] font-bold leading-[44px] track-[-0.72px] text-center mb-16">
             Explore over 700+ Courses
           </h1>
-          <div className="w-full grid grid-cols-4 gap-5 mb-16">
+          <div className="w-full grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5 mb-16">
             <CoursesCard
               image={CSSLOgo}
               starlogo={RatingsImg}
@@ -216,7 +216,7 @@ const Index = () => {
           />
         </div>
         {/* Learning */}
-        <div className="w-full mb-[164px]">
+        <div className="w-full md:mb-[164px] mb-[80px]">
           <h1 className="text-[38px] font-bold leading-[44px] track-[-0.72px] text-gray-900 text-center mb-4">
             For all learning paths
           </h1>
@@ -224,7 +224,7 @@ const Index = () => {
             Whether you’re a full-stack developer, designer, or looking to get
             into AI, we’ve got a path for you.
           </p>
-          <div className="w-full grid grid-cols-4 gap-5 mb-20">
+          <div className="w-full grid xl:grid-cols-4 lg:grid-cols-3 grid-cols-2 gap-5 mb-16">
             <LearningCard
               image={FullStack}
               logos
@@ -310,7 +310,7 @@ const Index = () => {
           </div>
         </div>
         {/* Developers */}
-        <div className="w-full mb-[164px]">
+        <div className="w-full md:mb-[164px] mb-[80px]">
           <h1 className="text-[38px] font-bold leading-[44px] track-[-0.72px] text-gray-900 text-center mb-4">
             An army of developers ready to assist
           </h1>
@@ -353,7 +353,7 @@ const Index = () => {
           />
         </div>
         {/* Writing */}
-        <div className="w-full mb-[164px]">
+        <div className="w-full md:mb-[164px] mb-[80px]">
           <h1 className="text-[38px] font-bold leading-[44px] track-[-0.72px] text-gray-900 text-center mb-[64px]">
             What we’re writing about these days
           </h1>
@@ -393,7 +393,7 @@ const Index = () => {
           </div>
         </div>
         {/* Join Newsletter */}
-        <div className="flex flex-col items-center">
+        <div className="w-full flex flex-col items-center">
           <h2 className="text-[36px] font-bold leading-[44px] tracking-[-0.72px] text-[#292A32] mb-8">
             Join the newsletter
           </h2>

@@ -7,7 +7,7 @@ const Index = props => {
       <img
         src={image}
         alt="CourseCard_Image"
-        className="rounded-lg w-full flex items-center justify-center h-[200px]"
+        className="rounded-lg w-full flex items-center justify-center sm:h-[200px] h-auto"
       />
       <div className="w-full px-4 flex gap-2 items-center">
         <img src={starlogo} alt="Star_Logo" className="w-[120px] h-[24px]" />
