@@ -8,8 +8,6 @@ import CoursesCard from "../common/CoursesCard"
 import LearningCard from "../common/LearningCard"
 import WritingTabs from "../common/writingTabs"
 import ArmyCard from "../common/ArmyCard"
-import bgJava from "../../assets/images/bg-card2.png"
-import Java from "../../assets/images/logo/javaScript.svg"
 
 import Button from "../../utils/Button"
 
@@ -91,98 +89,6 @@ const courses = [
     image: CloudImage,
     course: "Cloud & DevOps",
     courseQuantity: "37 courses",
-  },
-]
-const exploreCourses = [
-  {
-    courseImage: CSSLOgo,
-    ratings: RatingsImg,
-    rating: "4.8",
-    reviews: "(48 reviews)",
-    courseTitle: "CSS Troubleshooting in Six Easy Steps",
-  },
-  {
-    courseImage: Typescript,
-    ratings: RatingsImg,
-    rating: "4.8",
-    reviews: "(4 reviews)",
-    courseTitle: "Advanced React with TypeScript",
-  },
-  {
-    courseImage: JavaScript,
-    ratings: RatingsImg,
-    rating: "4.7",
-    reviews: "(15 reviews)",
-    courseTitle: "JavaScript Fundamentals",
-  },
-  {
-    courseImage: CSSFirebox,
-    ratings: RatingsImg,
-    rating: "4.6",
-    reviews: "42 reviews)",
-    courseTitle: "Master CSS Layouts with Flexbox",
-  },
-  {
-    courseImage: PhPExplore,
-    ratings: RatingsImg,
-    rating: "4.5",
-    reviews: "(82 reviews)",
-    courseTitle: "PHP and MySQL Programming Principles",
-  },
-  {
-    courseImage: CSSArchitecture,
-    ratings: RatingsImg,
-    rating: "4.4",
-    reviews: "(38 reviews)",
-    courseTitle: "Become the CSS Hero of Your Office with CSS Architecture",
-  },
-  {
-    courseImage: ReactImg,
-    ratings: RatingsImg,
-    rating: "4.2",
-    reviews: "(6 reviews)",
-    courseTitle: "A Playful Intro to React",
-  },
-  {
-    courseImage: FigmaImg,
-    ratings: RatingsImg,
-    rating: "3.6",
-    reviews: "(102 reviews)",
-    courseTitle: "Learn Fundamental Design Principles for Non-Designers",
-  },
-]
-const learning = [
-  {
-    image: FullStack,
-    courseImage1: Javascript,
-    courseImage2: JavascriptGreen,
-    courseImage3: ReactLogo,
-    steps: 7,
-    title: "Full Stack JavaScript Developer",
-  },
-  {
-    image: WebDevelopmentBasics,
-    courseImage1: Javascript,
-    courseImage2: HTMLImage,
-    courseImage3: CSSLOgo,
-    steps: 7,
-    title: "Web Development Basics",
-  },
-  {
-    image: BuildPages,
-    courseImage1: HTMLImage,
-    courseImage2: CSSLOgo,
-    courseImage3: FigmaImg,
-    steps: 7,
-    title: "Build Beautiful Webpages",
-  },
-  {
-    image: PythonMaster,
-    courseImage1: PythonImage,
-    courseImage2: "",
-    courseImage3: "",
-    steps: 7,
-    title: "Full Stack JavaScript Developer",
   },
 ]
 
