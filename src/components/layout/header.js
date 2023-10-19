@@ -111,7 +111,7 @@ const Header = () => {
             <Link
               to="https://www.sitepoint.com/premium/pricing/?ref_source=sitepoint&ref_medium=topnav"
               target="_blank"
-              className="buttontrial bg-primary-700 w-full xs:whitespace-pre xsm:whitespace-normal"
+              className="buttontrial bg-primary-700 w-full whitespace-pre xsm:whitespace-normal"
             >
               Start Free Trial
             </Link>
@@ -168,7 +168,7 @@ const Header = () => {
             <Link
               to="https://www.sitepoint.com/premium/pricing/?ref_source=sitepoint&ref_medium=topnav"
               target="_blank"
-              className="button bg-primary-700 w-full xs:whitespace-pre xsm:whitespace-normal"
+              className="button bg-primary-700 w-full whitespace-pre xsm:whitespace-normal"
             >
               Join Premium
             </Link>
