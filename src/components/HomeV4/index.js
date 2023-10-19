@@ -32,7 +32,6 @@ const Index = () => {
               className="bg-[#7232FA] w-[190px] hover:bg-white hover:text-[#292A32] border border-solid border-[#7232FA] hover:border-[#292A32] rounded-xl"
               icon=""
               type=""
-              disabled
             />
             <Button
               text="Browse the library"
@@ -40,7 +39,6 @@ const Index = () => {
               className="hover:bg-[#7232FA] !px-0 w-[190px] !font-bold bg-white !text-[#292A32] hover:!text-white border hover:border-none border-solid border-[#292A32] rounded-xl"
               icon=""
               type=""
-              disabled
             />
           </div>
         </div>
