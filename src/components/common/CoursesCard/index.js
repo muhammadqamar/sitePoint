@@ -1,11 +1,12 @@
 import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
 
-const Index = () => {
+const Index = props => {
+  const { image, starlogo, rating, review, heading } = props
   return (
     <div className="w-auto h-auto  pb-5 flex flex-col items-center gap-4 rounded-lg ">
       <StaticImage
-        src="../../../assets/images/css-bg.png"
+        src={image}
         alt="A dinosaur"
         placeholder="blurred"
         height={200}
@@ -13,21 +14,21 @@ const Index = () => {
       />
       <div className="w-full px-4 flex gap-2 items-center">
         <StaticImage
-          src="../../../assets/images/stars.png"
+          src={starlogo}
           alt="A dinosaur"
           placeholder="blurred"
           width={120}
           height={24}
         />
         <span className="body-small-text tracking-normal text-gray-900 m-0">
-          4.8
+          {rating}
         </span>
         <span className="body-small-text tracking-normal text-gray-701 m-0">
-          (48 reviews)
+          {review}
         </span>
       </div>
       <h4 className="w-full px-4  small-text !font-bold  text-gray-900 m-0">
-        CSS Troubleshooting in Six Easy Steps
+        {heading}
       </h4>
     </div>
   )

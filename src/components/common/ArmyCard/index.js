@@ -1,18 +1,19 @@
 import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
-import ComitIcon from "../../../assets/images/icons/comit.svg"
+import CommentIcon from "../../../assets/images/icons/comit.svg"
 
-const Index = () => {
+const Index = props => {
+  const { heading, profileLogo, name, date, comment } = props
   return (
     <div className="w-auto h-[233px] p-4 flex items-start justify-between flex-col  gap-3 rounded-lg border border-solid border-gray-201">
       <div className="">
         <h4 className="small-text !font-bold mb-[17px] text-gray-900">
-          The usage of Artificial Intelligence in the sitepoint community
+          {heading}
         </h4>
 
         <div className="flex items-center gap-2">
           <StaticImage
-            src="../../../assets/images/logo/javaScript.svg"
+            src={profileLogo}
             alt="A dinosaur"
             placeholder="blurred"
             layout="fixed"
@@ -21,17 +22,17 @@ const Index = () => {
             className="rounded-full flex items-center justify-center"
           />
           <span className="body-small-text tracking-normal text-gray-900 m-0">
-            DaveMaxxwell
+            {name}
           </span>
           <span className="body-small-text tracking-normal text-gray-701 m-0">
-            Mar 8
+            {date}
           </span>
         </div>
       </div>
       <div className="flex items-center gap-2">
-        <img src={ComitIcon} alt="commit" />
+        <img src={CommentIcon} alt="commit" />
         <p className="body-small-text tracking-normal text-gray-900 m-0">
-          218 courses
+          {comment}
         </p>
       </div>
     </div>
