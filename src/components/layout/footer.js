@@ -99,7 +99,7 @@ const Footer = () => {
                     target="_blank"
                     className="text-center text-gray-900 small-text tracking-[-0.16px]"
                   >
-                    Newsletters
+                    Developer Newsletters
                   </Link>
                   <Link
                     to=""

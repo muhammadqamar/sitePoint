@@ -83,3 +83,20 @@ p {
   background-size: 20px, 20px;
   background-repeat: no-repeat;
 }
+
+// slick slider
+.slick-slider {
+  .slick-list {
+    .slick-track {
+      display: flex;
+    }
+    height: 64px;
+    .slick-slide {
+      min-width: 120px !important;
+      margin-right: 64px;
+    }
+  }
+  .slick-arrow {
+    display: none;
+  }
+}

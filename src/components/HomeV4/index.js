@@ -95,9 +95,9 @@ const courses = [
 const Index = () => {
   return (
     <div className="w-full pt-[228px]">
-      <div className="max-w-[1440px] mx-auto md:px-[130px] px-5">
+      <div className="">
         {/* Hero */}
-        <div className="flex flex-col items-center md:mb-[164px] mb-[80px]">
+        <div className="max-w-[1440px] mx-auto md:px-[130px] px-5 flex flex-col items-center mb-20 md:mb-[120px] xl:mb-[164px]">
           <h1 className="md:text-[90px] text-[50px] font-bold leading-[92px] tracking-[-1.4px] text-[#292A32] mb-6 md:text-center text-start">
             We develop developers
           </h1>
@@ -125,7 +125,7 @@ const Index = () => {
           </div>
         </div>
         {/* Courses */}
-        <div className="w-full grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-5 md:mb-[164px] mb-[80px]">
+        <div className="max-w-[1440px] mx-auto md:px-[130px] px-5 w-full grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-5 md:mb-[164px] mb-[80px]">
           {courses?.map((item, index) => (
             <div
               className="w-[280px] h-auto px-4 py-4 flex items-center gap-3 rounded-lg border border-solid border-gray-201"
@@ -148,7 +148,7 @@ const Index = () => {
           ))}
         </div>
         {/*Explore Courses */}
-        <div className="w-full md:mb-[164px] mb-[80px]">
+        <div className="max-w-[1440px] mx-auto md:px-[130px] px-5 w-full mb-20 md:mb-[120px] xl:mb-[164px]">
           <h1 className="text-[38px] font-bold leading-[44px] track-[-0.72px] text-center mb-16">
             Explore over 700+ Courses
           </h1>
@@ -216,7 +216,7 @@ const Index = () => {
           />
         </div>
         {/* Learning */}
-        <div className="w-full md:mb-[164px] mb-[80px]">
+        <div className="max-w-[1440px] mx-auto md:px-[130px] px-5 w-full mb-20 md:mb-[120px] xl:mb-[164px]">
           <h1 className="text-[38px] font-bold leading-[44px] track-[-0.72px] text-gray-900 text-center mb-4">
             For all learning paths
           </h1>
@@ -269,11 +269,11 @@ const Index = () => {
           />
         </div>
         {/* Inspired Content */}
-        <div className="mb-[164px] flex flex-col items-center gap-16">
+        <div className="mb-20 md:mb-[120px] xl:mb-[164px] flex flex-col items-center gap-16">
           <h2 className="text-[36px] font-bold leading-[44px] tracking-[-0.72px] text-[#292A32]">
             Content that’s inspired the Internet
           </h2>
-          <div className="w-full flex gap-5">
+          <div className="max-w-[1440px] mx-auto md:px-[130px] px-5 w-full flex gap-5">
             <div className="xl:max-w-[880px] w-full p-8 rounded-lg border border-solid border-[#DADAE0]">
               <p className="max-w-[628px] text-[24px] font-normal leading-[36px] tracking-normal text-[#292A32] mb-10">
                 “... I joined SitePoint to learn more about web stuff and their
@@ -305,12 +305,13 @@ const Index = () => {
               className="rounded-lg"
             />
           </div>
-          <div className="w-full">
+          {/* Slider */}
+          <div className="w-full max-w-[1440px] min-h-[64px]">
             <Slider />
           </div>
         </div>
         {/* Developers */}
-        <div className="w-full md:mb-[164px] mb-[80px]">
+        <div className="max-w-[1440px] mx-auto md:px-[130px] px-5 w-full mb-20 md:mb-[120px] xl:mb-[164px]">
           <h1 className="text-[38px] font-bold leading-[44px] track-[-0.72px] text-gray-900 text-center mb-4">
             An army of developers ready to assist
           </h1>
@@ -353,7 +354,7 @@ const Index = () => {
           />
         </div>
         {/* Writing */}
-        <div className="w-full md:mb-[164px] mb-[80px]">
+        <div className="max-w-[1440px] mx-auto md:px-[130px] px-5 w-full mb-20 md:mb-[120px] xl:mb-[164px]">
           <h1 className="text-[38px] font-bold leading-[44px] track-[-0.72px] text-gray-900 text-center mb-[64px]">
             What we’re writing about these days
           </h1>
@@ -361,7 +362,7 @@ const Index = () => {
             <WritingTabs />
           </div>
           {/* Learning Cards */}
-          <div className="w-full grid grid-cols-4 gap-5 mb-[164px]">
+          <div className="w-full grid grid-cols-4 gap-5">
             <LearningCard
               image={CraftingTarget}
               logo={ShefaliShetty}
@@ -393,7 +394,7 @@ const Index = () => {
           </div>
         </div>
         {/* Join Newsletter */}
-        <div className="w-full flex flex-col items-center">
+        <div className="max-w-[1440px] mx-auto md:px-[130px] px-5 w-full flex flex-col items-center">
           <h2 className="text-[36px] font-bold leading-[44px] tracking-[-0.72px] text-[#292A32] mb-8">
             Join the newsletter
           </h2>

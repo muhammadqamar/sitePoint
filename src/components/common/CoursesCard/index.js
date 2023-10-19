@@ -14,7 +14,7 @@ const Index = props => {
         <span className="body-small-text tracking-normal text-gray-900 m-0">
           {rating}
         </span>
-        <span className="body-small-text tracking-normal text-gray-701 m-0">
+        <span className="body-small-text tracking-normal text-gray-701 m-0 whitespace-nowrap">
           {review}
         </span>
       </div>
