@@ -94,7 +94,7 @@ const courses = [
 
 const Index = () => {
   return (
-    <div className="w-full pt-[228px]">
+    <div className="w-full md:pt-[228px] pt-[150px]">
       <div className="">
         {/* Hero */}
         <div className="max-w-[1440px] mx-auto md:px-[130px] px-5 flex flex-col items-center mb-20 md:mb-[120px] xl:mb-[164px]">
@@ -153,62 +153,7 @@ const Index = () => {
             Explore over 700+ Courses
           </h1>
           <div className="w-full grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5 mb-16">
-            <CoursesCard
-              image={CSSLOgo}
-              starlogo={RatingsImg}
-              rating="4.8"
-              review="(48 reviews)"
-              heading="CSS Troubleshooting in Six Easy Steps"
-            />
-            <CoursesCard
-              image={Typescript}
-              starlogo={RatingsImg}
-              rating="4.8"
-              review="(4 reviews)"
-              heading="Advanced React with TypeScript"
-            />
-            <CoursesCard
-              image={JavaScript}
-              starlogo={RatingsImg}
-              rating="4.7"
-              review="(15 reviews)"
-              heading="JavaScript Fundamentals"
-            />
-            <CoursesCard
-              image={CSSFirebox}
-              starlogo={RatingsImg}
-              rating="4.6"
-              review="(42 reviews)"
-              heading="Master CSS Layouts with Flexbox"
-            />
-            <CoursesCard
-              image={PhPExplore}
-              starlogo={RatingsImg}
-              rating="4.5"
-              review="(82 reviews)"
-              heading="PHP and MySQL Programming Principles"
-            />
-            <CoursesCard
-              image={CSSArchitecture}
-              starlogo={RatingsImg}
-              rating="4.4"
-              review="(38 reviews)"
-              heading="Become the CSS Hero of Your Office with CSS Architecture"
-            />
-            <CoursesCard
-              image={ReactImg}
-              starlogo={RatingsImg}
-              rating="4.2"
-              review="(6 reviews)"
-              heading="A Playful Intro to React"
-            />
-            <CoursesCard
-              image={FigmaImg}
-              starlogo={RatingsImg}
-              rating="3.6"
-              review="(102 reviews)"
-              heading="Learn Fundamental Design Principles for Non-Designers"
-            />
+            <CoursesCard />
           </div>
           <Button
             text="Browse Premium Library"
@@ -224,7 +169,7 @@ const Index = () => {
             Whether you’re a full-stack developer, designer, or looking to get
             into AI, we’ve got a path for you.
           </p>
-          <div className="w-full grid xl:grid-cols-4 lg:grid-cols-3 grid-cols-2 gap-5 mb-16">
+          <div className="w-full grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5 mb-16">
             <LearningCard
               image={FullStack}
               logos
@@ -318,7 +263,7 @@ const Index = () => {
           <p className="small-text text-center text-gray-900 mb-16">
             Create a free account and join our community today!
           </p>
-          <div className="w-full grid grid-cols-4 gap-5 mb-16">
+          <div className="w-full grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5 mb-16">
             <ArmyCard
               heading="The usage of Artificial Intelligence in the sitepoint community"
               profileLogo={DaveMaxxwell}
@@ -362,7 +307,7 @@ const Index = () => {
             <WritingTabs />
           </div>
           {/* Learning Cards */}
-          <div className="w-full grid grid-cols-4 gap-5">
+          <div className="w-full grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5 mb-[164px]">
             <LearningCard
               image={CraftingTarget}
               logo={ShefaliShetty}
@@ -394,7 +339,7 @@ const Index = () => {
           </div>
         </div>
         {/* Join Newsletter */}
-        <div className="max-w-[1440px] mx-auto md:px-[130px] px-5 w-full flex flex-col items-center">
+        <div className="max-w-[1440px] mx-auto md:px-[130px] px-5 w-full flex flex-col md:items-center items-start">
           <h2 className="text-[36px] font-bold leading-[44px] tracking-[-0.72px] text-[#292A32] mb-8">
             Join the newsletter
           </h2>
@@ -432,7 +377,7 @@ const Index = () => {
               isSubmitting,
               /* and other goodies */
             }) => (
-              <form onSubmit={handleSubmit} className="flex">
+              <form onSubmit={handleSubmit} className="flex flex-wrap gap-5">
                 <div>
                   <input
                     type="email"
@@ -441,7 +386,7 @@ const Index = () => {
                     onBlur={handleBlur}
                     value={values.email}
                     placeholder="Enter your email"
-                    className="py-4 px-6 text-[16px] font-normal leading-[24px] tracking-normal rounded-xl max-w-[340px] text-[#292A32] border border-solid border-[#DADAE0] focus:border-[#7232FA] mr-5"
+                    className="py-4 px-6 text-[16px] font-normal leading-[24px] tracking-normal rounded-xl max-w-[340px] text-[#292A32] border border-solid border-[#DADAE0] focus:border-[#7232FA]"
                   />
                   <p className="caption-text  text-[red] m-0">
                     {errors.email && touched.email && errors.email}
