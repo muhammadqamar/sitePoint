@@ -2,13 +2,20 @@ import React from "react"
 
 import Slider from "react-slick"
 import logo1 from "../../assets/images/logo/microsoft.svg"
+import logo2 from "../../assets/images/logo/shopify.svg"
+import logo3 from "../../assets/images/logo/stanford.svg"
+import logo4 from "../../assets/images/logo/99designs.svg"
+import logo5 from "../../assets/images/logo/microsoft.svg"
+import logo6 from "../../assets/images/logo/shopify.svg"
+import logo7 from "../../assets/images/logo/stanford.svg"
+import logo8 from "../../assets/images/logo/99designs.svg"
 
 const Index = () => {
   var settings = {
     dots: false,
     infinite: true,
     speed: 700,
-    slidesToShow: 7,
+    slidesToShow: 8,
     slidesToScroll: 6,
     initialSlide: 0,
     responsive: [
@@ -44,25 +51,25 @@ const Index = () => {
       logo: logo1,
     },
     {
-      logo: logo1,
+      logo: logo2,
     },
     {
-      logo: logo1,
+      logo: logo3,
     },
     {
-      logo: logo1,
+      logo: logo4,
     },
     {
-      logo: logo1,
+      logo: logo5,
     },
     {
-      logo: logo1,
+      logo: logo6,
     },
     {
-      logo: logo1,
+      logo: logo7,
     },
     {
-      logo: logo1,
+      logo: logo8,
     },
     {
       logo: logo1,

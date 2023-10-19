@@ -286,27 +286,27 @@ const Footer = () => {
                 Advertise
               </Link>
             </div>
-            <div className="w-64 flex-col justify-start items-start gap-8 inline-flex">
-              <h4
-                className={`subheading-text text-center !text-white${
-                  location === "/home-v4/"
-                    ? "text-gray-900 !font-bold"
-                    : "!text-white"
-                }`}
-              >
-                Connect
-              </h4>
-              <div
-                className={`justify-start items-start ${
-                  location === "/home-v4/" ? "gap-4" : "gap-2"
-                } inline-flex`}
-              >
-                {location === "/home-v4/" ? (
-                  <>
+            <div
+              className={`w-64 flex-col items-start gap-8 inline-flex ${
+                location === "/home-v4/"
+                  ? "justify-between min-h-[304px]"
+                  : "justify-start"
+              }`}
+            >
+              {location === "/home-v4/" ? (
+                <div className="flex flex-col items-start gap-4">
+                  <h4
+                    className={`subheading-text text-center text-gray-900 !font-bold`}
+                  >
+                    Connect
+                  </h4>
+                  <div
+                    className={`justify-start items-start gap-4 inline-flex`}
+                  >
                     <a
                       href="https://twitter.com/sitepointdotcom"
                       target="_blank"
-                      className="w-6 h-6 border border-solid border-gray-900 rounded-lg"
+                      className="w-9 h-9 flex justify-center border border-solid border-gray-900 rounded-lg"
                     >
                       <img
                         src={SocialIcon}
@@ -317,7 +317,7 @@ const Footer = () => {
                     <a
                       href="https://www.sitepoint.com/feed/"
                       target="_blank"
-                      className="w-6 h-6 border border-solid border-gray-900 rounded-lg"
+                      className="w-9 h-9 flex justify-center border border-solid border-gray-900 rounded-lg"
                     >
                       <img
                         src={FacebookIcon}
@@ -328,7 +328,7 @@ const Footer = () => {
                     <a
                       href="https://www.facebook.com/sitepoint"
                       target="_blank"
-                      className="w-6 h-6 border border-solid border-gray-900 rounded-lg"
+                      className="w-9 h-9 flex justify-center border border-solid border-gray-900 rounded-lg"
                     >
                       <img
                         src={XLogo}
@@ -339,7 +339,7 @@ const Footer = () => {
                     <a
                       href="https://www.facebook.com/sitepoint"
                       target="_blank"
-                      className="w-6 h-6 border border-solid border-gray-900 rounded-lg"
+                      className="w-9 h-9 flex justify-center border border-solid border-gray-900 rounded-lg"
                     >
                       <img
                         src={InstaIcon}
@@ -347,9 +347,19 @@ const Footer = () => {
                         className="w-6 h-w-6 object-contain"
                       />
                     </a>
-                  </>
-                ) : (
-                  <>
+                  </div>
+                </div>
+              ) : (
+                <>
+                  <h4
+                    className={`subheading-text text-center !text-white
+                `}
+                  >
+                    Connect
+                  </h4>
+                  <div
+                    className={`justify-start items-start gap-2 inline-flex`}
+                  >
                     <a
                       href="https://twitter.com/sitepointdotcom"
                       target="_blank"
@@ -383,9 +393,9 @@ const Footer = () => {
                         className="w-auto h-auto object-contain"
                       />
                     </a>
-                  </>
-                )}
-              </div>
+                  </div>
+                </>
+              )}
               {location === "/home-v4/" ? null : (
                 <div className="text-gray_200 small-text tracking-[-0.16px]">
                   © 2000 – 2023 SitePoint Pty. Ltd.
