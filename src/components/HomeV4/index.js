@@ -273,7 +273,7 @@ const Index = () => {
           <h2 className="text-[36px] font-bold leading-[44px] tracking-[-0.72px] text-[#292A32]">
             Content that’s inspired the Internet
           </h2>
-          <div className="w-full flex gap-5 mb-16">
+          <div className="w-full flex gap-5">
             <div className="xl:max-w-[880px] w-full p-8 rounded-lg border border-solid border-[#DADAE0]">
               <p className="max-w-[628px] text-[24px] font-normal leading-[36px] tracking-normal text-[#292A32] mb-10">
                 “... I joined SitePoint to learn more about web stuff and their
