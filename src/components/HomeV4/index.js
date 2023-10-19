@@ -451,7 +451,7 @@ const Index = () => {
           <h1 className="text-[38px] font-bold leading-[44px] track-[-0.72px] text-gray-900 text-center mb-[64px]">
             What we’re writing about these days
           </h1>
-          <div className="w-full flex items-center gap-1 mb-[64px]">
+          <div className="w-full flex items-center flex-wrap xl:flex-nowrap gap-1 mb-[64px]">
             <WritingTabs />
           </div>
           {/* Learning Cards */}
