@@ -1,6 +1,7 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import { Formik } from "formik"
+import Slider from "../LogoSlider"
 
 import LanguageCard from "../common/LanguageCard"
 import CoursesCard from "../common/CoursesCard"
@@ -305,7 +306,7 @@ const Index = () => {
             Whether you’re a full-stack developer, designer, or looking to get
             into AI, we’ve got a path for you.
           </p>
-          <div className="w-full grid grid-cols-4 gap-5 mb-16">
+          <div className="w-full grid grid-cols-4 gap-5 mb-20">
             <LearningCard
               image={FullStack}
               logos
@@ -344,13 +345,17 @@ const Index = () => {
               subheading="Become a Python master"
             />
           </div>
+          <Button
+            text="Explore all courses"
+            className=" mx-auto !text-gray-900 hover:!text-white !font-bold rounded-xl border border-solid border-gray-900 hover:border-purple_300"
+          />
         </div>
         {/* Inspired Content */}
         <div className="mb-[164px] flex flex-col items-center gap-16">
           <h2 className="text-[36px] font-bold leading-[44px] tracking-[-0.72px] text-[#292A32]">
             Content that’s inspired the Internet
           </h2>
-          <div className="flex gap-5">
+          <div className="w-full flex gap-5 mb-16">
             <div className="xl:max-w-[880px] w-full p-8 rounded-lg border border-solid border-[#DADAE0]">
               <p className="max-w-[628px] text-[24px] font-normal leading-[36px] tracking-normal text-[#292A32] mb-10">
                 “... I joined SitePoint to learn more about web stuff and their
@@ -381,6 +386,9 @@ const Index = () => {
               layout="fixed"
               className="rounded-lg"
             />
+          </div>
+          <div className="w-full">
+            <Slider />
           </div>
         </div>
         {/* Developers */}
