@@ -45,8 +45,8 @@ const Footer = () => {
     <footer
       className={`w-full px-[20px] md:px-[clamp(20px,12vw,122px)] ${
         location === "/home-v4/"
-          ? "xs:py-8 xsm:py-12 md:py-[164px]"
-          : "xs:py-8 xsm:py-12 md:py-[120px]"
+          ? "py-8 xsm:py-12 md:py-[164px]"
+          : "py-8 xsm:py-12 md:py-[120px]"
       } ${location === "/home-v4/" ? "bg-white" : "bg-black"}`}
     >
       <div className="max-w-[1084px] mx-auto">
@@ -67,7 +67,7 @@ const Footer = () => {
                 <Link
                   to="https://www.sitepoint.com/premium/pricing/?ref_source=sitepoint&ref_medium=topnav"
                   target="_blank"
-                  className="buttontrial bg-primary-700 w-auto xs:whitespace-pre xsm:whitespace-normal"
+                  className="buttontrial bg-primary-700 w-auto whitespace-pre xsm:whitespace-normal"
                 >
                   Start Free Trial
                 </Link>
