@@ -1,4 +1,3 @@
-import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
 import CommentIcon from "../../../assets/images/icons/comit.svg"
 
@@ -12,15 +11,6 @@ const Index = props => {
         </h4>
 
         <div className="flex items-center gap-2">
-          {/* <StaticImage
-            src={profileLogo}
-            alt="A dinosaur"
-            placeholder="blurred"
-            layout="fixed"
-            width={24}
-            height={24}
-            className="rounded-full flex items-center justify-center"
-          /> */}
           <img
             src={profileLogo}
             alt="Profile_Logo"

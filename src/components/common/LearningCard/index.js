@@ -1,4 +1,3 @@
-import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
 
 const Index = props => {
@@ -20,7 +19,6 @@ const Index = props => {
       <img
         src={image}
         alt="A dinosaur"
-        // placeholder="blurred"
         width={280}
         height={height || 320}
         className="rounded-lg w-full flex items-center justify-center"
