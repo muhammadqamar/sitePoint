@@ -19,9 +19,9 @@ const Index = props => {
       <img
         src={image}
         alt="A dinosaur"
-        width={280}
-        height={height || 320}
-        className="rounded-lg w-full flex items-center justify-center"
+        // width={280}
+        // height={height || 320}
+        className="rounded-lg w-full flex items-center justify-center sm:h-[320px] h-full"
       />
       <div className="w-full  flex gap-2 items-center">
         <div className="flex items-center gap-1">

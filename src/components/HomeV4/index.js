@@ -94,7 +94,7 @@ const courses = [
 
 const Index = () => {
   return (
-    <div className="w-full pt-[228px]">
+    <div className="w-full md:pt-[228px] pt-[150px]">
       <div className="max-w-[1440px] mx-auto md:px-[130px] px-5">
         {/* Hero */}
         <div className="flex flex-col items-center md:mb-[164px] mb-[80px]">
@@ -224,7 +224,7 @@ const Index = () => {
             Whether you’re a full-stack developer, designer, or looking to get
             into AI, we’ve got a path for you.
           </p>
-          <div className="w-full grid xl:grid-cols-4 lg:grid-cols-3 grid-cols-2 gap-5 mb-16">
+          <div className="w-full grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5 mb-16">
             <LearningCard
               image={FullStack}
               logos
@@ -317,7 +317,7 @@ const Index = () => {
           <p className="small-text text-center text-gray-900 mb-16">
             Create a free account and join our community today!
           </p>
-          <div className="w-full grid grid-cols-4 gap-5 mb-16">
+          <div className="w-full grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5 mb-16">
             <ArmyCard
               heading="The usage of Artificial Intelligence in the sitepoint community"
               profileLogo={DaveMaxxwell}
@@ -361,7 +361,7 @@ const Index = () => {
             <WritingTabs />
           </div>
           {/* Learning Cards */}
-          <div className="w-full grid grid-cols-4 gap-5 mb-[164px]">
+          <div className="w-full grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5 mb-[164px]">
             <LearningCard
               image={CraftingTarget}
               logo={ShefaliShetty}
@@ -393,7 +393,7 @@ const Index = () => {
           </div>
         </div>
         {/* Join Newsletter */}
-        <div className="w-full flex flex-col items-center">
+        <div className="w-full flex flex-col md:items-center items-start">
           <h2 className="text-[36px] font-bold leading-[44px] tracking-[-0.72px] text-[#292A32] mb-8">
             Join the newsletter
           </h2>
@@ -431,7 +431,7 @@ const Index = () => {
               isSubmitting,
               /* and other goodies */
             }) => (
-              <form onSubmit={handleSubmit} className="flex">
+              <form onSubmit={handleSubmit} className="flex flex-wrap gap-5">
                 <div>
                   <input
                     type="email"
@@ -440,7 +440,7 @@ const Index = () => {
                     onBlur={handleBlur}
                     value={values.email}
                     placeholder="Enter your email"
-                    className="py-4 px-6 text-[16px] font-normal leading-[24px] tracking-normal rounded-xl max-w-[340px] text-[#292A32] border border-solid border-[#DADAE0] focus:border-[#7232FA] mr-5"
+                    className="py-4 px-6 text-[16px] font-normal leading-[24px] tracking-normal rounded-xl max-w-[340px] text-[#292A32] border border-solid border-[#DADAE0] focus:border-[#7232FA]"
                   />
                   <p className="caption-text  text-[red] m-0">
                     {errors.email && touched.email && errors.email}
