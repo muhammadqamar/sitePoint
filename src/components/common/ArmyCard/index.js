@@ -12,7 +12,7 @@ const Index = props => {
         </h4>
 
         <div className="flex items-center gap-2">
-          <StaticImage
+          {/* <StaticImage
             src={profileLogo}
             alt="A dinosaur"
             placeholder="blurred"
@@ -20,6 +20,11 @@ const Index = props => {
             width={24}
             height={24}
             className="rounded-full flex items-center justify-center"
+          /> */}
+          <img
+            src={profileLogo}
+            alt="Profile_Logo"
+            className="rounded-full flex items-center justify-center w-[24px] h-[24px]"
           />
           <span className="body-small-text tracking-normal text-gray-900 m-0">
             {name}

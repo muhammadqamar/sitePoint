@@ -36,8 +36,20 @@ import JavascriptGreen from "../../assets/images/javaScriptGreen.png"
 import WebDevelopmentBasics from "../../assets/images/webDevelopmentBasics.png"
 import BuildPages from "../../assets/images/buildBeautifulWebpages.png"
 import PythonMaster from "../../assets/images/becomePythonMaster.png"
+import CraftingTarget from "../../assets/images/craftingTarget.png"
+import ChromeExtension from "../../assets/images/chromeExtension.png"
+import AcceleratingCloud from "../../assets/images/acceleratingCloud.png"
+import WhichLanguage from "../../assets/images/whichLanguage.png"
 
 import RatingsImg from "../../assets/images/logo/ratings.svg"
+import ShefaliShetty from "../../assets/images/logo/shefaliShetty.svg"
+import MarkJacob from "../../assets/images/logo/markJacob.svg"
+import AndrewMillan from "../../assets/images/logo/andrewMillan.svg"
+import SarahJemeson from "../../assets/images/logo/sarahJemeson.svg"
+import DaveMaxxwell from "../../assets/images/logo/daveMaxxwell.svg"
+import JakeJhonson from "../../assets/images/logo/jakeJhonson.svg"
+import MarkDev from "../../assets/images/logo/markDev.svg"
+import AndySmith from "../../assets/images/logo/daveMaxxwell.svg"
 
 const courses = [
   {
@@ -401,28 +413,32 @@ const Index = () => {
           </p>
           <div className="w-full grid grid-cols-4 gap-5 mb-16">
             <ArmyCard
-              heading="dasdafda"
-              name="afsaf"
-              comment="reply"
-              profileLogo={""}
+              heading="The usage of Artificial Intelligence in the sitepoint community"
+              profileLogo={DaveMaxxwell}
+              name="DaveMaxxwell"
+              date="Mar 8"
+              comment="10 replies"
             />
             <ArmyCard
-              heading="dasdafda"
-              name="afsaf"
-              comment="reply"
-              profileLogo={""}
+              heading="How to move my side bar from the bottom to top?"
+              profileLogo={JakeJhonson}
+              name="JakeJhonson"
+              date="Mar 5"
+              comment="15 replies"
             />
             <ArmyCard
-              heading="dasdafda"
-              name="afsaf"
-              comment="reply"
-              profileLogo={""}
+              heading="Can some guide me with AI Chat Bots and How we can use to start our Coding Journey"
+              profileLogo={MarkDev}
+              name="MarkDev"
+              date="Mar 2"
+              comment="20 replies"
             />
             <ArmyCard
-              heading="dasdafda"
-              name="afsaf"
-              comment="reply"
-              profileLogo={""}
+              heading="Latest book you’ve read"
+              profileLogo={AndySmith}
+              name="AndySmith"
+              date="Mar 1"
+              comment="367 replies"
             />
           </div>
           <Button
@@ -441,29 +457,29 @@ const Index = () => {
           {/* Learning Cards */}
           <div className="w-full grid grid-cols-4 gap-5 mb-[164px]">
             <LearningCard
-              image={bgJava}
-              logo={Java}
+              image={CraftingTarget}
+              logo={ShefaliShetty}
               name="Shefali Shetty"
               date="Sep 1, 2023"
               subheading="Crafting Targeted Email Campaigns with Mailchimp and Drupal"
             />
             <LearningCard
-              image={bgJava}
-              logo={Java}
+              image={ChromeExtension}
+              logo={MarkJacob}
               name="Mark Jacob"
               date="Aug 31, 2023"
               subheading="How to Create a Chrome Extension in 10 Minutes Flat"
             />
             <LearningCard
-              image={bgJava}
-              logo={Java}
+              image={AcceleratingCloud}
+              logo={AndrewMillan}
               name="Andrew Millan"
               date="Aug 30, 2023"
               subheading="Accelerating the Cloud: What to Expect When Going Cloud Native"
             />
             <LearningCard
-              image={bgJava}
-              logo={Java}
+              image={WhichLanguage}
+              logo={SarahJemeson}
               name="Sarah Jemeson"
               date="Aug 29, 2023"
               subheading="Which Programming Language Should I Learn First in 2023?"
