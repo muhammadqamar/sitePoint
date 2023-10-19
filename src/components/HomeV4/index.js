@@ -198,7 +198,7 @@ const Index = () => {
             <Button
               text="Browse the library"
               onClick={() => {}}
-              className="hover:bg-[#7232FA] bg-white !text-[#292A32] hover:!text-white border hover:border-none border-solid border-[#292A32] rounded-xl"
+              className="hover:bg-[#7232FA] bg-white !text-[#292A32] hover:!text-white border border-solid border-[#292A32] hover:border-[#7232FA] rounded-xl"
               icon=""
               type=""
               disabled
@@ -234,61 +234,61 @@ const Index = () => {
             Explore over 700+ Courses
           </h1>
           <div className="w-full grid grid-cols-4 gap-5 mb-16">
-            {/* {exploreCourses?.map((item, index) => (
-              <div
-                className="w-auto h-auto  pb-5 flex flex-col items-center gap-4 rounded-lg "
-                key={index}
-              >
-                <img
-                  src={item.courseImage}
-                  alt="Course_Img"
-                  className="rounded-lg h-[200px]"
-                />
-                <div className="w-full px-4 flex gap-2 items-center">
-                  <img
-                    src={item.ratings}
-                    alt="Rating_img"
-                    className="h-[24px] "
-                  />
-                  <span className="body-small-text tracking-normal text-gray-900 m-0">
-                    {item.rating}
-                  </span>
-                  <span className="body-small-text tracking-normal text-gray-701 m-0">
-                    {item.reviews}
-                  </span>
-                </div>
-                <h4 className="w-full px-4  small-text !font-bold  text-gray-900 m-0">
-                  {item.courseTitle}
-                </h4>
-              </div>
-            ))} */}
             <CoursesCard
-              image={""}
-              starlogo={""}
-              rating="43"
-              review="fdf"
-              heading="fsafsd"
+              image={CSSLOgo}
+              starlogo={RatingsImg}
+              rating="4.8"
+              review="(48 reviews)"
+              heading="CSS Troubleshooting in Six Easy Steps"
             />
             <CoursesCard
-              image={""}
-              starlogo={""}
-              rating="43"
-              review="fdf"
-              heading="fsafsd"
+              image={Typescript}
+              starlogo={RatingsImg}
+              rating="4.8"
+              review="(4 reviews)"
+              heading="Advanced React with TypeScript"
             />
             <CoursesCard
-              image={""}
-              starlogo={""}
-              rating="43"
-              review="fdf"
-              heading="fsafsd"
+              image={JavaScript}
+              starlogo={RatingsImg}
+              rating="4.7"
+              review="(15 reviews)"
+              heading="JavaScript Fundamentals"
             />
             <CoursesCard
-              image={""}
-              starlogo={""}
-              rating="43"
-              review="fdf"
-              heading="fsafsd"
+              image={CSSFirebox}
+              starlogo={RatingsImg}
+              rating="4.6"
+              review="(42 reviews)"
+              heading="Master CSS Layouts with Flexbox"
+            />
+            <CoursesCard
+              image={PhPExplore}
+              starlogo={RatingsImg}
+              rating="4.5"
+              review="(82 reviews)"
+              heading="PHP and MySQL Programming Principles"
+            />
+            <CoursesCard
+              image={CSSArchitecture}
+              starlogo={RatingsImg}
+              rating="4.4"
+              review="(38 reviews)"
+              heading="Become the CSS Hero of Your Office with CSS Architecture"
+            />
+            <CoursesCard
+              image={ReactImg}
+              starlogo={RatingsImg}
+              rating="4.2"
+              review="(6 reviews)"
+              heading="A Playful Intro to React"
+            />
+            <CoursesCard
+              image={FigmaImg}
+              starlogo={RatingsImg}
+              rating="3.6"
+              review="(102 reviews)"
+              heading="Learn Fundamental Design Principles for Non-Designers"
             />
           </div>
           <Button
@@ -308,28 +308,37 @@ const Index = () => {
           <div className="w-full grid grid-cols-4 gap-5 mb-16">
             <LearningCard
               image={FullStack}
-              logo={Java}
+              logos
+              logo1={Javascript}
+              logo2={JavascriptGreen}
+              logo3={ReactLogo}
               name="Beginner"
               step="7 steps"
               subheading="Full Stack JavaScript Developer"
             />
             <LearningCard
               image={WebDevelopmentBasics}
-              logo={Java}
+              logos
+              logo1={Javascript}
+              logo2={HTMLImage}
+              logo3={CSSLOgo}
               name="Beginner"
               step="2 steps"
               subheading="Web Development Basics"
             />
             <LearningCard
               image={BuildPages}
-              logo={Java}
+              logos
+              logo1={HTMLImage}
+              logo2={CSSLOgo}
+              logo3={FigmaImg}
               name="Beginner"
               step="3 steps"
               subheading="Build Beautiful Webpages"
             />
             <LearningCard
               image={PythonMaster}
-              logo={Java}
+              logo={PythonImage}
               name="Beginner"
               step="7 steps"
               subheading="Become a Python master"
@@ -413,13 +422,11 @@ const Index = () => {
             className=" mx-auto !text-gray-900 hover:!text-white !font-bold rounded-xl border border-solid border-gray-900 hover:border-purple_300"
           />
         </div>
-
         {/* Writing */}
         <div className="w-full mb-[164px]">
           <h1 className="text-[38px] font-bold leading-[44px] track-[-0.72px] text-gray-900 text-center mb-[64px]">
             What we’re writing about these days
           </h1>
-
           <div className="w-full flex items-center gap-1 mb-[64px]">
             <WritingTabs />
           </div>
@@ -455,7 +462,6 @@ const Index = () => {
             />
           </div>
         </div>
-
         {/* Join Newsletter */}
         <div className="flex flex-col items-center">
           <h2 className="text-[36px] font-bold leading-[44px] tracking-[-0.72px] text-[#292A32] mb-8">

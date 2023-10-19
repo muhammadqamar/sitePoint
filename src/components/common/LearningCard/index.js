@@ -2,7 +2,19 @@ import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
 
 const Index = props => {
-  const { image, height, logos, logo, name, step, date, subheading } = props
+  const {
+    image,
+    height,
+    logos,
+    logo,
+    logo1,
+    logo2,
+    logo3,
+    name,
+    step,
+    date,
+    subheading,
+  } = props
   return (
     <div className="w-auto h-auto flex flex-col items-center gap-4 rounded-lg">
       <img
@@ -18,34 +30,26 @@ const Index = props => {
           {logos ? (
             <>
               <img
-                src={logo}
-                alt="A dinosaur"
-                // placeholder="blurred"
-                width={24}
-                height={24}
+                src={logo1}
+                alt="Course_Logo"
+                className="rounded-full w-6 h-6"
               />
               <img
-                src={logo}
-                alt="A dinosaur"
-                // placeholder="blurred"
-                width={24}
-                height={24}
+                src={logo2}
+                alt="Course_Logo"
+                className="rounded-full w-6 h-6"
               />
               <img
-                src={logo}
-                alt="A dinosaur"
-                // placeholder="blurred"
-                width={24}
-                height={24}
+                src={logo3}
+                alt="Course_Logo"
+                className="rounded-full w-6 h-6"
               />
             </>
           ) : (
             <img
               src={logo}
-              alt="A dinosaur"
-              // placeholder="blurred"
-              width={24}
-              height={24}
+              alt="Course_Logo"
+              className="rounded-full w-6 h-6"
             />
           )}
         </div>
