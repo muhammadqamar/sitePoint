@@ -28,6 +28,8 @@ const Index = () => {
           <div className="flex items-center flex-wrap gap-5">
             <Button
               text="Start Free Trial"
+              link="https://www.sitepoint.com/premium/pricing/"
+              target={"_blank"}
               onClick={() => {}}
               className="bg-[#7232FA] w-[190px] hover:bg-white hover:text-[#292A32] border border-solid border-[#7232FA] hover:border-[#292A32] rounded-xl"
               icon=""
@@ -35,6 +37,8 @@ const Index = () => {
             />
             <Button
               text="Browse the library"
+              link="https://www.sitepoint.com/premium/library/"
+              target={"_blank"}
               onClick={() => {}}
               className="hover:bg-[#7232FA] !px-0 w-[190px] !font-bold bg-white !text-[#292A32] hover:!text-white border hover:border-none border-solid border-[#292A32] rounded-xl"
               icon=""
@@ -56,6 +60,8 @@ const Index = () => {
           </div>
           <Button
             text="Browse Premium Library"
+            link="https://www.sitepoint.com/premium/library/"
+            target={"_blank"}
             className=" mx-auto !text-gray-900 hover:!text-white !font-bold rounded-xl border border-solid border-gray-900 hover:border-purple_300"
           />
         </div>
@@ -73,6 +79,8 @@ const Index = () => {
           </div>
           <Button
             text="Explore all courses"
+            link="https://www.sitepoint.com/premium/library/"
+            target={"_blank"}
             className=" mx-auto !text-gray-900 hover:!text-white !font-bold rounded-xl border border-solid border-gray-900 hover:border-purple_300"
           />
         </div>
@@ -131,6 +139,8 @@ const Index = () => {
           </div>
           <Button
             text="Go to community"
+            link="https://www.sitepoint.com/community/"
+            target={"_blank"}
             className=" mx-auto !text-gray-900 hover:!text-white !font-bold rounded-xl border border-solid border-gray-900 hover:border-purple_300"
           />
         </div>

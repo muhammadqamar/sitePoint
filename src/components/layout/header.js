@@ -101,7 +101,7 @@ const Header = ({ homev4 }) => {
               />
             </Link>
             <Link
-              to=""
+              to="https://www.sitepoint.com/premium/pricing/"
               target="_blank"
               className="buttontrial bg-primary-700 w-full whitespace-pre xsm:whitespace-normal"
             >

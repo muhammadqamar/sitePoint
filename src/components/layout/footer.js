@@ -63,7 +63,7 @@ const Footer = () => {
                   />
                 </Link>
                 <Link
-                  to=""
+                  to="https://www.sitepoint.com/premium/pricing/"
                   target="_blank"
                   className="buttontrial bg-primary-700 w-auto whitespace-pre xsm:whitespace-normal"
                 >
@@ -106,7 +106,7 @@ const Footer = () => {
                     Developer Newsletters
                   </Link>
                   <Link
-                    to=""
+                    to="https://www.sitepoint.com/premium/library/paths/"
                     target="_blank"
                     className="text-center text-gray-900 small-text tracking-[-0.16px]"
                   >
@@ -330,7 +330,7 @@ const Footer = () => {
                       />
                     </a>
                     <a
-                      href=""
+                      href="https://twitter.com/sitepointdotcom"
                       target="_blank"
                       className="w-9 h-9 flex justify-center border border-solid border-gray-900 rounded-lg"
                     >
@@ -341,7 +341,7 @@ const Footer = () => {
                       />
                     </a>
                     <a
-                      href=""
+                      href="https://www.linkedin.com/company/sitepoint"
                       target="_blank"
                       className="w-9 h-9 flex justify-center border border-solid border-gray-900 rounded-lg"
                     >

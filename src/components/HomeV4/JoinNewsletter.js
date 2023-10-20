@@ -74,9 +74,7 @@ const JoinNewsletter = () => {
 
                 <Button
                   text={!isSubmitting ? "Subscribe" : "Loading..."}
-                  disabled={
-                    isSubmitting || Object.keys(errors).length ? true : false
-                  }
+                  disabled={Object.keys(errors).length ? true : false}
                   className="mx-auto h-[56px] !text-gray-900 hover:!text-white !font-bold rounded-xl border border-solid border-gray-900 hover:border-purple_300"
                   type="submit"
                 />
