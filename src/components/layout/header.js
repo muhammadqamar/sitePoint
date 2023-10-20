@@ -61,14 +61,14 @@ const Header = ({ homev4 }) => {
               Sitepoint Suite
             </Link>
             <Link
-              to="https://www.sitepoint.com/community/"
+              to="https://www.sitepoint.com/premium/pricing/"
               target="_blank"
               className="text-center text-gray-900 small-text !font-semibold py-2 px-3"
             >
               Pricing
             </Link>
             <Link
-              to="https://www.sitepoint.com/community/"
+              to="https://www.sitepoint.com/about-us/"
               target="_blank"
               className="text-center text-gray-900 small-text !font-semibold py-2 px-3"
             >
@@ -101,7 +101,7 @@ const Header = ({ homev4 }) => {
               />
             </Link>
             <Link
-              to="https://www.sitepoint.com/premium/pricing/?ref_source=sitepoint&ref_medium=topnav"
+              to=""
               target="_blank"
               className="buttontrial bg-primary-700 w-full whitespace-pre xsm:whitespace-normal"
             >
