@@ -14,9 +14,11 @@ const Index = () => {
   var settings = {
     dots: false,
     infinite: true,
-    speed: 700,
+    autoplay: true,
+    autoplaySpeed: 300,
+    speed: 3000,
     slidesToShow: 8,
-    slidesToScroll: 8,
+    slidesToScroll: 1,
     responsive: [
       {
         breakpoint: 1024,

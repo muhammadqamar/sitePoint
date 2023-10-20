@@ -9,10 +9,10 @@ import * as React from "react"
 import Header from "./header"
 import Footer from "./footer"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, homev4 }) => {
   return (
     <div className="sitepoint-new-marketing">
-      <Header />
+      <Header homev4={homev4} />
       <main>{children}</main>
       <Footer />
     </div>

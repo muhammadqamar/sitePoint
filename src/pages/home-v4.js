@@ -5,7 +5,7 @@ import HomeV4Page from "../components/HomeV4"
 
 const HomeV4 = () => {
   return (
-    <Layout>
+    <Layout homev4>
       <HomeV4Page />
     </Layout>
   )

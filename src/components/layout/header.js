@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
-const Header = () => {
+const Header = ({ homev4 }) => {
   const [location, setLocation] = useState("")
 
   useEffect(() => {
@@ -24,7 +24,7 @@ const Header = () => {
         </Link>
       </div>
     </header>
-  ) : location === "/home-v4/" ? (
+  ) : homev4 ? (
     <header className="w-full absolute top-0 left-0 z-[5] px-[20px] md:px-[clamp(20px,12vw,122px)]">
       <div className="max-w-[1180px] mx-auto ">
         <div className="w-full py-4 justify-between gap-2 xsm:gap-0 items-center inline-flex">
