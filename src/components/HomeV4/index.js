@@ -118,7 +118,7 @@ const Index = () => {
               alt="Automattic image"
               placeholder="blurred"
               // layout=""
-              className="rounded-lg h-auto lg:h-full w-full xl:w-[280px]"
+              className="rounded-lg !h-auto lg:h-full w-full xl:w-[280px]"
             />
           </div>
           {/* Slider */}
