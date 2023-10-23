@@ -89,7 +89,7 @@ const Index = () => {
           <h2 className="text-[36px] font-bold leading-[44px] tracking-[-0.72px] text-[#292A32]">
             Content that’s inspired the Internet
           </h2>
-          <div className="max-w-[1440px] mx-auto w-full flex md:flex-nowrap flex-wrap gap-5">
+          <div className="max-w-[1440px] mx-auto w-full flex lg:flex-nowrap justify-center flex-wrap gap-5">
             <div className="xl:max-w-[880px] w-full p-8 rounded-lg border border-solid border-[#DADAE0]">
               <p className="max-w-[628px] text-[24px] font-normal leading-[36px] tracking-normal text-[#292A32] mb-10">
                 “... I joined SitePoint to learn more about web stuff and their
@@ -118,7 +118,7 @@ const Index = () => {
               alt="Automattic image"
               placeholder="blurred"
               // layout=""
-              className="rounded-lg h-full w-full xl:w-[280px]"
+              className="rounded-lg h-auto lg:h-full w-full xl:w-[280px]"
             />
           </div>
           {/* Slider */}
